@@ -1,64 +1,63 @@
-// Header.js
-import React, { useState, useEffect } from 'react';
-import { TbSpeakerphone , TbDoorExit } from 'react-icons/tb';
-import headerMenu from '../../../../../data/menu';
+import React, { useState } from 'react';
 import './Header.css';
+import headerMenu from '../../../../../data/menu';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const [notification, setNotification] = useState({
-    message: 'This is your default notification message.',
-    visible: true,
-  });
+  const [currentNav, setCurrentNav] = useState(null);
+  const [navsVisited, setNavsVisited] = useState({});
 
-  const handleAnnouncementClose = () => {
-    setNotification({ ...notification, visible: false });
-    document.querySelector('.header-div').style.top = '0';
+  const handleMouseEnter = (e, item) => {
+    setCurrentNav(item.name.en);
+
+    setNavsVisited({
+      ...navsVisited,
+      [item.name.en]: true,
+    });
   };
 
-  const menuItems = headerMenu.map((item) => item.name.en);
-
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    setScrolled(offset > 50);
+  const handleMouseLeave = () => {
+    setCurrentNav(null);
   };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
-    <div className={`header-div ${scrolled ? 'shadow' : ''}`}>
-      {notification.visible && (
-        <div className={`notification-bar ${notification.visible ? 'active' : ''}`}>
-          <span className={`notification-message ${notification.visible ? 'visible' : ''}`}>
-            <TbSpeakerphone className="phone-icon" /> {notification.message}
-          </span>
-          <button className='notification-close-button' onClick={handleAnnouncementClose}>
-           <TbDoorExit />
-          </button>
-        </div>
-      )}
-
-      <div className="header-container">
-        <div className="logo-container">
-          <h1 className="logo">
-            <img src="/logo.png" alt="logo" />
-          </h1>
-        </div>
-
-        <div className="button-container">
-          {menuItems.map((item, index) => (
-            <a key={index} href={item.url}>
-              <button className="header-button">{item}</button>
-            </a>
-          ))}
-        </div>
+    <header className="header">
+      {/* Logo */}
+      <div className="logo">
+        <img src='./logo.png' />
       </div>
-    </div>
+
+      {/* Navigation */}
+      <nav className="navbar">
+        <ul className="nav__links">
+          {headerMenu.map((item, index) => (
+            <li
+              key={index}
+              data-expand={item.name.en}
+              className={`nav--link ${currentNav === item.name.en || navsVisited[item.name.en] ? 'hover' : ''}`}
+              onMouseEnter={(e) => handleMouseEnter(e, item)}
+              onMouseLeave={handleMouseLeave}
+            >
+              {item.name.en}
+              {item.submenu && currentNav === item.name.en && (
+                <ul className={`submenu ${currentNav === item.name.en ? 'active' : ''}`}>
+                  {item.submenu.map((subItem, subIndex) => (
+                    <li key={subIndex}>
+                      <a href={subItem.url}>{subItem.name.en}</a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {/* Buttons */}
+      <div className="buttons">
+        <a href="#" className="login-btn">Login</a>
+        <a href="#" className="get-started-btn">Get Started</a>
+      </div>
+    </header>
   );
 };
 

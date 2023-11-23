@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+
+:root {
+  --windowWidth: 100vw;
+  --layoutWidthMax: 1080px;
+  --viewportWidthSmall: 375;
+  --viewportWidthMedium: 600;
+  --viewportWidthLarge: 1112;
+  --paddingTop: 160px;
+  --paddingBottom: 160px;
+  --columnPaddingNone: 0;
+  --columnPaddingSmall: 8px;
+  --columnPaddingNormal: 16px;
+  --rowGapNormal: 8px;
+  --rowGapMedium: 24px;
+  --rowGapLarge: 32px;
+  --rowGapXLarge: 64px;
+  --rowGapXXLarge: 88px;
+  --columnWidth: calc(var(--layoutWidth)/var(--columnCountMax));
+  --columnMaxWidth: calc(var(--layoutWidthMax)*0.25);
+  --columnPaddingMedium: 32px;
+  --columnPaddingLarge: 64px;
+  --columnPaddingXLarge: 112px;
+  --columnCountMax: 4;
+  --layoutWidth: var(--layoutWidthMax);
+  --gutterWidth: calc(var(--windowWidth)/2 - var(--layoutWidth)/2);
+  --fontFamily: "sohne-var","Helvetica Neue","Arial",sans-serif;
+  --fontWeightLight: 200;
+  --fontWeightNormal: 300;
+  --fontWeightSemibold: 425;
+  --fontWeightBold: 500;
+  --fixedNavHeight: 60px;
+  --fixedNavSpacing: 48px;
+  --fixedNavScrollMargin: calc(var(--fixedNavHeight) + var(--fixedNavSpacing));
+  --hoverTransition: 150ms cubic-bezier(0.215,0.61,0.355,1);
+  --scrollbarWidth: 0px;
+
+  /* Add other necessary variables for the header */
+}
