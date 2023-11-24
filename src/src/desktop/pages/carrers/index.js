@@ -1,9 +1,10 @@
 import React from 'react';
+import './careers.css'
 
 function Careers() {
   return (
-    <div>
-      jones
+    <div className='carrers-section'>
+    jones
     </div>
   );
 }
