@@ -1,9 +1,22 @@
 import React from 'react';
-
+import Landing from '../../components/home/landing'
+import Trusted from '../../components/home/trusted';
+import Service from '../../components/home/service';
+import Counter from '../../components/home/counter'
+import Features from '../../components/home/features';
+import Testimonials from '../../components/home/testimonials'
+import ContactBar from '../../components/home/ContactBar'
 function Home() {
   return (
     <div>
-      Home of Desktop
+     <Landing />
+     <Trusted />
+     <Service />
+     <Counter />
+     <Testimonials />
+     <ContactBar />
+     
+     
     </div>
   );
 }
