@@ -21,33 +21,39 @@ const Trusted = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 5000, // Adjust the speed here
+    speed: 5000,
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0, // Set to 0 for continuous scrolling
-    cssEase: 'linear', // For smooth continuous movement
+    autoplaySpeed: 0, 
+    cssEase: 'linear', 
     pauseOnHover: false,
     arrows: false,
+    centerMode: true, 
+    centerPadding: '50px', 
+    swipeToSlide: true, // Enable mouse movement control
+    draggable: true,
+
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2, // Number of slides to show on screens smaller than 768px
+          slidesToShow: 2,
           slidesToScroll: 1,
+          centerMode: false, // Disable center mode on smaller screens
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Number of slides to show on screens between 768px and 1024px
+          slidesToShow: 3, // Number of slides to show on screens between 768px and 1024px
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3, // Number of slides to show on screens between 1024px and 1280px
+          slidesToShow: 4, // Number of slides to show on screens between 1024px and 1280px
           slidesToScroll: 1,
         },
       },
