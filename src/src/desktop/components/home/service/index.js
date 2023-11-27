@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Service.css';
 import Image from './image.png'; // Import the image
-import Serviceimage1 from './image.png';
+import Serviceimage1 from './person.png';
 import servicesData from '../../../../../data/servicesData';
-import Slider from './slider';
+// import Slider from './slider';
 const Service = () => {
   const [selectedService, setSelectedService] = useState('1');
   const [showTopic1, setShowTopic1] = useState(true);
@@ -83,7 +83,7 @@ const Service = () => {
             </div>
           </div>
         )}
-        <Slider sliderData={topics}> leo jones stanley</Slider>
+        {/* <Slider sliderData={topics}> leo jones stanley</Slider> */}
       
       </div>
 

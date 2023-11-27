@@ -5,17 +5,19 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  margin-bottom: -50px;
-  margin-top: 50px;
+  /* margin-bottom: -10px; */
+  margin-top: 100px;
+  margin-left: 20px;
+  position: relative;
 }
 
 .service-container {
   padding: 10px;
   width: 80%;
-  height: 700px;
+  height: 800px;
   border-radius: 40px;
   margin-top: -30px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .service-heading-container {
@@ -23,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  height: 70px;
+  height: 100px;
   background-color: #fff;
   border-radius: 40px;
   box-shadow: 0 0 10px 1px lightgrey;
@@ -37,7 +39,7 @@
   border-radius: 40px;
   padding: 10px;
   cursor: pointer;
-  height: 80%;
+  height: 75%;
 }
 
 .service-heading2 {
@@ -135,25 +137,35 @@
   color: #555;
 }
 
+.main-subservice .subservicemain-content a {
+  text-decoration: none; /* Remove underline from anchor tags */
+}
+ /* Normal state styles */
 .main-subservice .subservicemain-content a button {
   display: flex;
   padding: 10px 20px;
   margin-top: 10px;
-  background-color: #E4DCFD;
+  background-color: rgb(136, 0, 255);
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover state styles */
 .main-subservice .subservicemain-content a button:hover {
-  background-color: #c0acff;
+  background-color: rgb(195, 0, 255);
+  transform: scale(1.05); /* Scale up by 5% on hover */
+  box-shadow: 0 0 15px rgba(136, 0, 255, 0.5); /* Add a subtle box shadow on hover */
 }
+
 
 .subservice-image-container {
   display: flex;
   margin: 20px;
+  padding: 20px;
 }
 
 .service-tem-column {
@@ -162,20 +174,21 @@
 
 .subservice-image {
   display: flex;
-  height: auto;
-  max-height: 300px;
+  
+  max-height: 100px;
   justify-content: center;
   align-items: center;
   height: 100px;
   border-radius: 20px;
-  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: 20px;
 }
 
 .subservice-image img {
   min-width: 100%;
   min-height: 100%;
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 350px;
+  max-width: 350px;
   border-radius: 5px;
 }
 
@@ -224,7 +237,7 @@
 }
 
 /* Media Query for mobile view */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .service-heading-container {
     flex-direction: column;
     height: auto;
@@ -253,17 +266,33 @@
 }
 
 
-/* ... (your existing styles) */
+
+/* @media (min-width: 1400px) {
+  .center-container {
+    margin-left: 0; 
+  }
+} */
 
 /* Media Query for mobile view */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .center-container {
+    
+    margin-bottom: 400px;
+    
+  }
+}
+@media (max-width: 1200px) {
   .center-container {
     margin: 0;
+    margin-bottom: 200px;
+    
   }
-
+  .center-container {
+    margin-left: 0;
+  }
   .service-container {
    
-    width: 95%;
+    width: 90%;
     height: 120px;
     border-radius: 20px;
     margin-top: 15px;
@@ -272,16 +301,16 @@
 
   .service-heading-container {
  
-     width: 100%;
-    height: 120px;
-    flex-direction: column;
+     width: 60%;
+    height: 80px;
+    flex-direction: row;
   }
 
   .service-heading1,
   .service-heading2 {
-    width: 100%;
+    width: 45%;
     height: auto; /* Adjust height for smaller screens */
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .service-image {
@@ -293,7 +322,18 @@
     height: auto;
     margin-top: 20px;
   }
-
+  .subservice-image {
+    display: flex;
+    /* height: auto; */
+    max-height: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    border-radius: 20px;
+   
+    box-shadow: #000000;
+  }
   .service-heading.selected {
     padding: 10px; /* Adjust padding for selected item */
   }
