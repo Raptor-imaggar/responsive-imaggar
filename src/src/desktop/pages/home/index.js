@@ -3,7 +3,7 @@ import Landing from '../../components/home/landing'
 import Trusted from '../../components/home/trusted';
 import Service from '../../components/home/service';
 import Counter from '../../components/home/counter'
-import Features from '../../components/home/features';
+// import Features from '../../components/home/features';
 import Testimonials from '../../components/home/testimonials'
 import ContactBar from '../../components/home/ContactBar'
 function Home() {

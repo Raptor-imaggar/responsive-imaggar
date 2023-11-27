@@ -15,9 +15,9 @@ const Landing = () => {
       <div className="col">
         <div className="text-col ">
           <h1>{title} <span>{spanText}</span></h1>
-          <p>{paragraph}</p>
+          <p className='landing-praragraph'>{paragraph}</p>
           <div className="buttons-row">
-            <a className="button section-link" href={demoLink}>
+            <a className="button-landingpage section-link" href={demoLink}>
               {buttonText}
             </a>
           </div>

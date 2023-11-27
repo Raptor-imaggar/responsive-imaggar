@@ -8,7 +8,9 @@ import Careers from './pages/carrers';
 const DesktopRoutes = () => {
   return (
     <RouterRoutes>
-      <Route exact path="/" element={<><Header /><Home /><Footer /></>} />
+      <Route exact path="/" element={<>
+      <Header />
+      <Home /><Footer /></>} />
       <Route  path="/Careers" element={<><Header /><Careers /><Footer /></>} />
       <Route exact path="*" element={<Home />} />
     </RouterRoutes>
