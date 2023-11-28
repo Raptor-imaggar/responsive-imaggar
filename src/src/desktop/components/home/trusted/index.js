@@ -87,7 +87,7 @@ const Trusted = () => {
   return (
 
     <div className="client-slider">
-      <h2>Trusted by 10+ Leading Brands</h2> jones
+      <h2>Trusted by 10+ Leading Brands</h2>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>

@@ -4,7 +4,7 @@ import './careers.css'
 function Careers() {
   return (
     <div className='carrers-section'>
-    jones
+    jone
     </div>
   );
 }

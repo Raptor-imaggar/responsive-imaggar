@@ -83,7 +83,7 @@ const Service = () => {
             </div>
           </div>
         )}
-        {/* <Slider sliderData={topics}> leo jones stanley</Slider> */}
+        
       
       </div>
 
