@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <div className="container row">
+        <div className="footer-container footer-row">
           {footerData.map((section, index) => (
             <div className="footer-col" key={index}>
               <h4>{section.title}</h4>
