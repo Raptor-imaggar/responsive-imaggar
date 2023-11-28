@@ -1,0 +1,87 @@
+.mobile-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-logo {
+  width: 150px;
+}
+
+.mobile-logo img {
+  width: 100%;
+}
+
+.mobile-menu-icon,
+.mobile-close-icon,
+.mobile-back-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+.mobile-close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.mobile-back-icon {
+  margin-bottom: 20px;
+}
+
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px;
+  z-index: 999;
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease; /* Add transition for a smooth sliding effect */
+}
+
+.mobile-nav__links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 20px 0; /* Add some margin to create line space */
+  text-align: center;
+}
+
+.mobile-nav--link {
+  margin-bottom: 20px;
+}
+
+.mobile-submenu {
+  margin-top: 20px;
+}
+
+.mobile-submenu-item {
+  margin-bottom: 10px;
+}
+
+.mobile-nav--link a,
+.mobile-submenu-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav--link a:hover,
+.mobile-submenu-item a:hover {
+  color: #f00;
+}

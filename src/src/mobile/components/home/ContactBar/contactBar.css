@@ -1,0 +1,138 @@
+.contactBar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* margin-top: 200px; */
+  
+  }
+  
+  .contact-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #8c36d8;
+    padding: 10px;
+    width: 100%;
+    border-radius: 24px;
+    align-items: center;
+    box-shadow: -4px 4px 25px 0px rgba(0, 0, 0, 0.075);
+    transition: all 0.3s;
+  }
+  
+  .contact-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    border-radius: inherit;
+    animation: shade 0.3s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes shade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .contact-bar:hover {
+    transform: scale(1.05);
+    box-shadow: -4px 4px 35px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sub-div {
+    padding: 10px;
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7f7f7;
+  }
+  
+  .left-div,
+  .right-div {
+    flex: 1;
+    margin: 10px 0;
+  }
+  
+  .getademo-button {
+    padding: 12px 35px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #8c36d8;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: -4px 4px 25px 0px rgba(255, 255, 255, 0.075);
+    transition: all 0.3s;
+}
+
+.getademo-button:hover {
+    background: linear-gradient(90deg, #E4DCFD 0%, #ffffff 100%);
+    color: #000000;
+    box-shadow: 0 0 10px 1px lightgrey;
+    transform: scale(1.05);
+    opacity: 0.9; /* Adjust the opacity as needed */
+}
+
+  
+  @media (min-width: 1200px) {
+    .contact-bar {
+      width: 75%;
+      flex-direction: row;
+      height: 180px;
+      justify-content: space-between;
+      /* margin-top: 100px; */
+    }
+  
+    .sub-div {
+      font-size: 28px;
+    }
+  
+    .left-div {
+      flex: 7;
+    }
+  
+    .right-div {
+      flex: 3;
+      margin: 0 10px;
+    }
+  
+    
+  }
+  
+  @media (max-width: 1200px) {
+    .contact-bar {
+      width: 75%;
+      flex-direction: row;
+      height: 180px;
+      justify-content: space-between;
+      /* margin-top: 100px; */
+    }
+  
+    .sub-div {
+      font-size: 20px;
+    }
+  
+    .left-div {
+      flex: 7;
+    }
+  
+    .right-div {
+      flex: 3;
+      margin: 0 10px;
+    }
+  
+    .getademo-button {
+      font-size: 10px;
+    }
+  }
+  

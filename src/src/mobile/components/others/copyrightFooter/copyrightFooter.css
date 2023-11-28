@@ -1,0 +1,152 @@
+/* Second Footer styles */
+
+/* Second Footer styles */
+
+.second-footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 40px;
+    transition: margin-bottom 0.5s ease; /* Add transition for margin-bottom */
+  }
+  
+  .second-footer.no-margin {
+    margin-bottom: 0;
+  }
+  
+  /* ... other styles ... */
+  
+  
+  .second-footer .copyright-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+  
+  .second-footer p {
+    margin: 0;
+    font-size: 16px; /* Adjust default font size */
+  
+    /* Responsive font size */
+    @media screen and (min-width: 576px) {
+      font-size: 8px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      font-size: 10px;
+    }
+  
+    @media screen and (min-width: 992px) {
+      font-size: 12px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
+  }
+  
+  /* Animation styles */
+  .second-footer p:hover {
+    color: #a58cf4; /* Adjust color on hover */
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .second-footer p::before {
+    content: '\2022'; /* Unicode for a bullet point */
+    color: #a58cf4; /* Adjust color of bullet point */
+    margin-right: 5px;
+    animation: rotate 2s infinite linear; /* Bullet point rotation animation */
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  
+  .announcement-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    font-size: 1rem;
+    border-top: 1px solid #721c24;
+    z-index: 25;
+    max-height: 60px;
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+  }
+  
+  /* Add the following new class for fade-out animation */
+  .announcement-bar.fade-out {
+    opacity: 0;
+  }
+  
+  
+  .announcement-bar-container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+  }
+  
+  .announcement-content {
+    text-decoration: underline; /* Add underline to the text */
+    color: #721c24;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .announcement-content:hover {
+    color: #a58cf4;
+    transform: scale(1.05);
+  }
+  
+  .announcement-icon {
+    margin-right: 10px;
+    animation: ringing 0.7s infinite;
+    font-size: 20px;
+  }
+  
+  @keyframes ringing {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .close-icon {
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
+  }
+  
+  .close-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; /* Add red glow effect */
+  }
+  
+  .announcement-bar p {
+    margin: 0;
+    cursor: pointer;
+  }
+  
