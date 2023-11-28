@@ -1,8 +1,10 @@
-
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+// import { TbSpeakerphone } from 'react-icons/tb';
+// import { AiOutlineCloseCircle } from 'react-icons/ai';
 import './Footer.css';
 import { footerData } from '../../../../../data/footer';
+import CopyrightFooter from '../copyrightFooter';
 
 const Footer = () => {
   const renderLinks = (links) => {
@@ -23,55 +25,38 @@ const Footer = () => {
               <ul>{renderLinks(section.links)}</ul>
             </div>
           ))}
-        
-       
-<div className="footer-col-2">
-<div className="form-sect-tem2">
-<div className="tem-social-i">
-       
-       
-        <h4>Subscribe</h4>
-  <div className="subscribe">
-    <input type='email'  placeholder="Subscribe" />
-    <button>Subscribe</button>
-
-     </div>
-      <div className="tem-social-i">
-        {/* Social media links */}
-       
-        <h4>follow us</h4>
-  <div className="social-links">
-    <a href="#"><FaFacebookF /></a>
-    <a href="#"><FaTwitter /></a>
-    <a href="#"><FaInstagram /></a>
-    <a href="#"><FaLinkedinIn /></a>
-  </div>
-      </div>
-    
-  
-</div>
-        </div></div></div>
-
+          
+          <div className="footer-col-2">
+            <div className="form-sect-tem2">
+              <div className="tem-social-i">
+                <h4>Subscribe</h4>
+                <div className="subscribe">
+                  <input type='email' placeholder="Subscribe" />
+                  <button>Subscribe</button>
+                </div>
+                <div className="tem-social-i">
+                  {/* Social media links */}
+                  <h4>follow us</h4>
+                  <div className="social-links">
+                    <a href="#"><FaFacebookF /></a>
+                    <a href="#"><FaTwitter /></a>
+                    <a href="#"><FaInstagram /></a>
+                    <a href="#"><FaLinkedinIn /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
+      <CopyrightFooter />
+      {/* Announcement Bar */}
+      
+
+      {/* Copyright Footer */}
       
     </>
   );
 };
 
 export default Footer;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
