@@ -12,8 +12,11 @@ function Home() {
      <Landing />
      <Trusted />
      <Service />
+     {/* <br/> */}
+     {/* <br/> */}
      <Counter />
-     {/* <Testimonials /> */}
+     <br/>
+     <Testimonials />
      <ContactBar />
      
      

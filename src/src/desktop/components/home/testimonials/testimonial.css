@@ -1,136 +1,247 @@
 /* CSS for Testimonial Component */
 
-.testimonials-container{
-    width: 100vw;
-    max-height: 1000px;
-    height: auto;
-    padding: 50px;
-    margin: 50px;
-}
-.testimonial {
+.testimonials-container {
+    width: 100%;
+    max-width: 1400px; /* Updated max-width for 1400px */
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px; /* Adjusted padding for responsiveness */
+  }
+  
+  .testimonial {
     margin: 0 auto 10px;
     padding: 20px;
     text-align: center;
-    /* background-color: #f9f9f9; */
     border-radius: 20px;
     max-width: 350px;
     height: auto;
     min-height: 400px;
- 
+  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: -4px 4px 25px 0px rgba(0, 0, 0, 0.075);
-}
-
-.testimonial-logo img {
-    max-width: 150px;
-    max-height: 100px;
+  }
+  
+  .testimonial-logo img {
+    max-width: 100%; /* Updated max-width for responsiveness */
     margin: 0 auto;
-
-}
-
-.testimonial-content {
+    max-height: 80px; /* Updated max-height for responsiveness */
+  }
+  
+  .testimonial-content {
     font-size: 16px;
     text-align: center;
-    margin: 40px 0;
+    margin: 20px 0; /* Adjusted margin for responsiveness */
     font-family: 'Open Sans', sans-serif;
-}
-
+  }
   
-
-
-.testimonial-line {
+  .testimonial-line {
     border: 1px solid #ccc;
     margin: 20px 0;
-}
-
-.testimonial-person {
+  }
+  
+  .testimonial-person {
     display: flex;
     align-items: center;
     padding: 0 10px;
     justify-content: space-between;
-    
-}
-
-.person-info {
+    margin-bottom: 15px;
+  }
+  
+  .person-info {
     display: flex;
     align-items: center;
-    /* Center picture vertically */
-}
-
-.person-pic {
+    width: 100%; /* Make sure .person-info takes up 100% of the width */
+  }
+  
+  .person-pic {
     max-width: 60px;
     max-height: 60px;
     border-radius: 50%;
     margin-right: 10px;
-}
-
-.person-name {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: -10px;
-}
-
-.person-position {
-    font-size: 14px;
-}
-
-.person-details {
+    flex: 0 0 30%; /* Take 30% of the width */
+  }
+  
+  .person-details {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-
+    align-items: center;
+    flex: 0 0 70%; /* Take 70% of the width */
   }
   
-
-
-/* CSS for Testimonials Component */
-.slick-slider {
+  .person-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .person-position {
+    font-size: 14px;
+  }
+  
+  /* CSS for Testimonials Component */
+  .slick-slider {
     width: 100%;
-    max-width: 1200px;
-
+    max-width: 1400px; /* Updated max-width for 1400px */
     margin: 0 auto;
     position: relative;
-}
-
-
-/* Updated CSS for Testimonial Component */
-
-/* ...existing styles... */
-
-/* Centering the title horizontally */
-.testimonial-content {
-    font-size: 16px;
+    padding: 0 20px; /* Add padding to create space on both sides */
+  }
+  
+  /* Testimonial Title Styles */
+  .testimonial-title {
     text-align: center;
-    margin: 40px 0; /* Increased margin for better spacing */
-    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px; /* Adjusted margin for responsiveness */
   }
   
-  /* Adjusted gap between testimonials */
-  .testimonial {
-    padding: 30px; /* Increased padding for more space */
-    /* ...existing styles... */
-    /* Center the testimonials and add space between them */
-    /* You might need to adjust the bottom margin depending on your layout */
+  /* Responsive Adjustments */
+  @media (max-width: 1400px) {
+    .testimonials-container {
+      width: 90%; /* Adjusted width for responsiveness */
+      padding: 15px;
+      margin-top: 40px; /* Adjusted padding for responsiveness */
+    }
+
+    .testimonial {
+        margin: 0 auto 10px;
+        padding: 20px;
+        
+        
+        max-width: 320px;
+        height: auto;
+        min-height: 400px;
+    }
+  
+    .testimonial-content {
+      font-size: 14px; /* Adjusted font size for responsiveness */
+    }
+  
+    .person-name {
+      font-size: 16px; /* Adjusted font size for responsiveness */
+    }
+  
+    .person-position {
+      font-size: 12px; /* Adjusted font size for responsiveness */
+    }
+  
+    .testimonial-logo img {
+      max-width: 100%;
+      max-height: 60px; /* Adjusted max-height for responsiveness */
+    }
+  
+    .person-pic {
+      max-width: 50px; /* Adjusted max-width for responsiveness */
+      max-height: 50px; /* Adjusted max-height for responsiveness */
+    }
   }
   
-  /* ...rest of your existing styles... */
+  @media (max-width: 1200px) {
+    .testimonials-container {
+      width: 80%; /* Adjusted width for responsiveness */
+      padding: 15px;
+      margin-top: 30px; /* Adjusted padding for responsiveness */
+    }
+    .testimonial {
+        margin: 0 auto 10px;
+        padding: 20px;
+        
+        border-radius: 20px;
+        max-width: 300px;
+        height: auto;
+        min-height: 380px;
+    }
+    .testimonial-content {
+      font-size: 14px; /* Adjusted font size for responsiveness */
+    }
   
-/* CSS for Testimonial Title */
-.testimonial-title {
-    
-    text-align: center;
-    margin-bottom: 30px; /* Adjust margin for space below the title */
+    .person-name {
+      font-size: 16px; /* Adjusted font size for responsiveness */
+    }
+  
+    .person-position {
+      font-size: 12px; /* Adjusted font size for responsiveness */
+    }
+  
+    .testimonial-logo img {
+      max-width: 100%;
+      max-height: 60px; /* Adjusted max-height for responsiveness */
+    }
+  
+    .person-pic {
+      max-width: 50px; /* Adjusted max-width for responsiveness */
+      max-height: 50px; /* Adjusted max-height for responsiveness */
+    }
   }
   
-  .testimonial-title h1 {
-    font-size: 32px; /* Adjust title font size */
-    margin-bottom: 10px; /* Add space between the title and subtitle */
+  @media (max-width: 900px) {
+    .testimonials-container {
+      width: 70%; /* Adjusted width for responsiveness */
+      padding: 15px; /* Adjusted padding for responsiveness */
+    }
+    .testimonial {
+        margin: 0 auto 10px;
+        padding: 20px;
+        
+        border-radius: 20px;
+        max-width: 280px;
+        height: auto;
+        min-height: 350px;
+    }
+    .testimonial-content {
+      font-size: 12px; /* Adjusted font size for responsiveness */
+    }
+  
+    .person-name {
+      font-size: 14px; /* Adjusted font size for responsiveness */
+    }
+  
+    .person-position {
+      font-size: 10px; /* Adjusted font size for responsiveness */
+    }
+  
+    .testimonial-logo img {
+      max-width: 100%;
+      max-height: 50px; /* Adjusted max-height for responsiveness */
+    }
+  
+    .person-pic {
+      max-width: 40px; /* Adjusted max-width for responsiveness */
+      max-height: 40px; /* Adjusted max-height for responsiveness */
+    }
   }
   
-  .testimonial-title h6 {
-    font-size: 14px; /* Adjust subtitle font size */
-    color: #888; /* Adjust subtitle color */
+  @media (max-width: 768px) {
+    .testimonials-container {
+      width: 90%; /* Adjusted width for responsiveness */
+      padding: 10px;
+      margin-top: 20px; /* Adjusted padding for responsiveness */
+    }
+  
+    .testimonial {
+      max-width: 100%; /* Adjusted max-width for responsiveness */
+    }
+  
+    .testimonial-content {
+      font-size: 12px; /* Adjusted font size for responsiveness */
+    }
+  
+    .person-name {
+      font-size: 14px; /* Adjusted font size for responsiveness */
+    }
+  
+    .person-position {
+      font-size: 10px; /* Adjusted font size for responsiveness */
+    }
+  
+    .testimonial-logo img {
+      max-width: 100%;
+      max-height: 40px; /* Adjusted max-height for responsiveness */
+    }
+  
+    .person-pic {
+      max-width: 30px; /* Adjusted max-width for responsiveness */
+      max-height: 30px; /* Adjusted max-height for responsiveness */
+    }
   }
   

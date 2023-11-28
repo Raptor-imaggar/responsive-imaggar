@@ -41,7 +41,14 @@ const Testimonials = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: false, // Hide navigation arrows
     responsive: [
+      {
+        breakpoint: 1400, // Large desktops and smaller
+        settings: {
+          slidesToShow: 3, // Show 3 testimonials
+        },
+      },
       {
         breakpoint: 1200, // Large desktops and smaller
         settings: {
@@ -68,17 +75,24 @@ const Testimonials = () => {
       },
     ],
   };
+  
 
   return (
-    <div className='testimonials-container '>
-    <div className='testimonial-title'><h1>Testimonials</h1>
-    <h6>How our Clients Felt !</h6></div>
+    // <div className='testimonials-container '>
+    // <div className='testimonial-title'><h1>Testimonials</h1>
+    // <h6>How our Clients Felt !</h6></div>
     
-    <Slider {...settings}>
+    // <Slider {...settings}>
+    //   {testimonialData.map((testimonial, index) => (
+    //     <Testimonial key={index} {...testimonial} />
+    //   ))}
+    // </Slider></div>
+<Slider {...settings}>
       {testimonialData.map((testimonial, index) => (
         <Testimonial key={index} {...testimonial} />
       ))}
-    </Slider></div>
+    </Slider>
+
   );
 };
 
