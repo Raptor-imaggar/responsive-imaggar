@@ -7,6 +7,7 @@ import Footer from './components/others/Footer';
 import SubscribePopup from './components/others/SubscribePopup';
 import Careers from './pages/carrers';
 import Login from './pages/login';
+import Contact from './pages/contact';
 
 const DesktopRoutes = () => {
   return (
@@ -15,7 +16,9 @@ const DesktopRoutes = () => {
       <Header />
       <Home /> <SubscribePopup /><Footer /></>} />
       <Route  path="/login" element={<><Header /><Login /><Footer /></>} />
+      
       <Route  path="/Careers" element={<><Header /><Careers /><Footer /></>} />
+      <Route  path="/contact" element={<><Header /><Contact /><Footer /></>} />
       <Route exact path="*" element={<Home />} />
     </RouterRoutes>
   );

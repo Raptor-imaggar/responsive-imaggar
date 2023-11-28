@@ -1,0 +1,273 @@
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.contact-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-content {
+  width: 60%;
+  padding: 20px;
+}
+
+.contact-content h2 {
+  font-size: 42px;
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: bold;
+}
+
+.contact-content h4 {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.highlight-text {
+  color: #8c36d8;
+}
+
+.contact-ul-tag {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  margin: 10px 0;
+  display: flex;
+  align-items: top;
+}
+
+.bullet-point {
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.contact-form {
+  width: 40%;
+  padding: 40px 52px;
+  box-shadow: -4px 4px 25px 0px #00000013;
+  background-color: #f1e3fd;
+  border-radius: 25px;
+  height: 80%;
+  margin-top: 50px;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc !important; 
+  border-radius: 5px;
+  transition: border-color 1s;
+}
+
+.contact-input:focus {
+  border: 1px solid #007bff !important;
+}
+
+.contact-input::placeholder {
+  opacity: 0.7;
+}
+
+.Nameinput {
+  width: 50%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.LastName {
+  margin-left: 20px; 
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space-between {
+  margin: 0 5px; 
+}
+
+.country-select {
+  width: 40%;
+  margin-right: 5px;
+}
+
+.country-select__control,
+.country-select__menu {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.country-select__single-value {
+  color: #333;
+}
+
+.country-select__option--is-selected,
+.country-select__option:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+.phone-input {
+  width: 65%;
+}
+
+.contact-submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.contact-submit-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.bullet-icon {
+  margin-bottom: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+
+/* Media query for 1400px */
+@media (max-width: 1400px) {
+  .contact-content {
+    width: 60%;
+  }
+  .contact-form {
+    width: 40%;
+  }
+}
+
+/* Media query for 1200px */
+@media (max-width: 1200px) {
+  .contact-content {
+    width: 60%;
+  }
+  .contact-form {
+    width: 40%;
+  }
+  .contact-content h2 {
+    font-size: 32px;
+  }
+
+  .contact-form h2{
+    font-size: 20px;
+  
+  }
+  .contact-content h4,
+  .heading {
+    font-size: 14px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  
+}
+
+/* Media query for 900px */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-content,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-content h2 {
+    font-size: 34px;
+  }
+
+  .contact-form h2{
+    font-size: 22px;
+  
+  }
+  .contact-content h4,
+  .heading {
+    font-size: 16px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  
+}
+
+/* Media query for 768px */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-content,
+  .contact-form {
+    width: 100%;
+  }
+  .contact-content h2 {
+    font-size: 24px;
+  }
+  .contact-content h4,
+  .heading {
+    font-size: 10px;
+  }
+  .description {
+    font-size: 8px;
+  }
+ 
+}
