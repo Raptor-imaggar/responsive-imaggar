@@ -78,21 +78,18 @@ const Testimonials = () => {
   
 
   return (
-    // <div className='testimonials-container '>
-    // <div className='testimonial-title'><h1>Testimonials</h1>
-    // <h6>How our Clients Felt !</h6></div>
-    
-    // <Slider {...settings}>
-    //   {testimonialData.map((testimonial, index) => (
-    //     <Testimonial key={index} {...testimonial} />
-    //   ))}
-    // </Slider></div>
-<Slider {...settings}>
-      {testimonialData.map((testimonial, index) => (
-        <Testimonial key={index} {...testimonial} />
-      ))}
-    </Slider>
+    <div className='testimonials-container '>
+      <div className='testimonial-title'>
+        <h1>Testimonials Here</h1>
+        <h6>How our Clients Felt !</h6>
+      </div>
 
+      <Slider {...settings}>
+        {testimonialData.map((testimonial, index) => (
+          <Testimonial key={index} {...testimonial} />
+        ))}
+      </Slider>
+    </div>
   );
 };
 
