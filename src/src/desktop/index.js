@@ -5,12 +5,15 @@ import Home from './pages/home';
 import Header from './components/others/Header'
 import Footer from './components/others/Footer';
 import Careers from './pages/carrers';
+import Login from './pages/login';
+
 const DesktopRoutes = () => {
   return (
     <RouterRoutes>
       <Route exact path="/" element={<>
       <Header />
       <Home /><Footer /></>} />
+      <Route  path="/login" element={<><Header /><Login /><Footer /></>} />
       <Route  path="/Careers" element={<><Header /><Careers /><Footer /></>} />
       <Route exact path="*" element={<Home />} />
     </RouterRoutes>
