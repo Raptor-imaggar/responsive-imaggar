@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import './SubscribePopup.css';
-
+import './SubscribePopup.css'; // You can create a CSS file for styling
 import Poster from './poster.png';
 
-const SubscribePopup = ({ onClose }) => {
+const SubscribePopup = () => {
   const [email, setEmail] = useState('');
-  const [isVisible, setIsVisible] = useState(false);
+  const [isPopupVisible, setPopupVisible] = useState(false);
+
+  useEffect(() => {
+    // Display the popup after 5 seconds
+    const timeoutId = setTimeout(() => {
+      setPopupVisible(true);
+    }, 5000);
+
+    // Cleanup the timeout on component unmount
+    return () => clearTimeout(timeoutId);
+  }, []); // Empty dependency array ensures this effect runs only once on mount
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -15,32 +24,25 @@ const SubscribePopup = ({ onClose }) => {
   const handleSubmit = () => {
     // Implement your subscription logic here
     console.log('Subscribed with email:', email);
-    // You can also close the popup after successful submission
-    handleClose();
+    // Hide the popup after successful submission
+    setPopupVisible(false);
   };
 
   const handleClose = () => {
-    setIsVisible(false);
-    // If you have additional closing animations, you can add them here
+    // Close the popup when the close icon is clicked
+    setPopupVisible(false);
   };
 
-  useEffect(() => {
-    // Show the popup after a delay (5 seconds in this example)
-    const timeoutId = setTimeout(() => {
-      setIsVisible(true);
-    }, 5000);
-
-    return () => clearTimeout(timeoutId); // Clear the timeout on unmount
-
-  }, []); // Empty dependency array ensures this effect runs only once on mount
-
-  return (
-    <div className={`popup-subscribe-main ${isVisible ? 'visible' : ''}`}>
-      <div className="popup-image" style={{ backgroundImage: `url(${Poster})` }}></div>
+  return isPopupVisible ? (
+    <div className="popup-subscribe-main">
+      <div className="popup-image-div">
+        {/* Use the Poster image within the div */}
+        <img src={Poster} alt="Logo" />
+      </div>
       <div className="popup-content">
         <div className="popup-close" onClick={handleClose}>
           {/* Use the AiOutlineCloseCircle icon */}
-          <AiOutlineCloseCircle className="close-icon" />
+          <AiOutlineCloseCircle />
         </div>
         <h2>Subscribe Now</h2>
         <p>Stay updated with our latest news and offers!</p>
@@ -53,7 +55,7 @@ const SubscribePopup = ({ onClose }) => {
         <button onClick={handleSubmit}>Subscribe</button>
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default SubscribePopup;

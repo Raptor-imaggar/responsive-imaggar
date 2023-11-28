@@ -175,7 +175,9 @@ ul {
   color: #a58cf4;
   transform: scale(1.1);
 }
-
+.margin-footer{
+  margin-left: 10px;
+}
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 1200px) {
   .footer-col,

@@ -20,14 +20,14 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-container footer-row">
           {footerData.map((section, index) => (
-            <div className="footer-col" key={index}>
+            <div className="footer-col margin-footer" key={index}>
               <h4>{section.title}</h4>
               <ul>{renderLinks(section.links)}</ul>
             </div>
           ))}
           
-          <div className="footer-col-2">
-            <div className="form-sect-tem2">
+          <div className="footer-col-2 ">
+            <div className="form-sect-tem2 margin-footer">
               <div className="tem-social-i">
                 <h4>Subscribe</h4>
                 <div className="subscribe">
