@@ -2,7 +2,7 @@
 
 export const contactData = {
     mainTitle: "Generative AI-Powered Support to Win Lifelong Customers",
-    subheading: "With Haptik, you can:",
+    subheading: "With IMAGGAR, you can:",
     listItems: [
       {
         icon: "AiOutlineCheckCircle",
