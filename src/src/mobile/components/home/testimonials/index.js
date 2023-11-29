@@ -1,8 +1,11 @@
+// Updated Testimonial component
+
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './testimonial.css';
+// import './testimonial.css';
+import './testimonial-mobile.css'; // Import mobile styles
 import testimonialData from '../../../../../data/testimonialData';
 
 const Testimonial = ({ logo, content, personPic, personName, personPosition, customColor }) => {
@@ -11,20 +14,20 @@ const Testimonial = ({ logo, content, personPic, personName, personPosition, cus
   };
 
   return (
-    <div className="testimonial" style={testimonialStyle}>
-      <div className="testimonial-logo">
+    <div className="mobile-testimonial" style={testimonialStyle}>
+      <div className="mobile-testimonial-logo">
         <img src={logo} alt="Company Logo" />
       </div>
-      <div className="testimonial-content">
+      <div className="mobile-testimonial-content">
         {content}
       </div>
-      <hr className="testimonial-line" />
-      <div className="testimonial-person">
-        <div className="person-info">
-          <img src={personPic} alt="Person Pic" className="person-pic" />
-          <div className="person-details">
-            <p className="person-name">{personName}</p>
-            <p className="person-position">{personPosition}</p>
+      <hr className="mobile-testimonial-line" />
+      <div className="mobile-testimonial-person">
+        <div className="mobile-person-info">
+          <img src={personPic} alt="Person Pic" className="mobile-person-pic" />
+          <div className="mobile-person-details">
+            <p className="mobile-person-name">{personName}</p>
+            <p className="mobile-person-position">{personPosition}</p>
           </div>
         </div>
       </div>
@@ -37,49 +40,16 @@ const Testimonials = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Show 2 testimonials on mobile screens
+    slidesToShow: 1, // Show 1 testimonial on mobile screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false, // Hide navigation arrows
-    responsive: [
-      {
-        breakpoint: 1400, // Large desktops and smaller
-        settings: {
-          slidesToShow: 3, // Show 3 testimonials
-        },
-      },
-      {
-        breakpoint: 1200, // Large desktops and smaller
-        settings: {
-          slidesToShow: 3, // Show 3 testimonials
-        },
-      },
-      {
-        breakpoint: 992, // Desktops and smaller
-        settings: {
-          slidesToShow: 2, // Show 2 testimonials
-        },
-      },
-      {
-        breakpoint: 768, // Tablets and smaller
-        settings: {
-          slidesToShow: 1, // Show 1 testimonial
-        },
-      },
-      {
-        breakpoint: 480, // Mobile devices
-        settings: {
-          slidesToShow: 1, // Show 1 testimonial
-        },
-      },
-    ],
   };
-  
 
   return (
-    <div className='testimonials-container '>
-      <div className='testimonial-title'>
+    <div className='mobile-testimonials-container '>
+      <div className='mobile-testimonial-title'>
         <h1>Testimonials Here</h1>
         <h6>How our Clients Felt !</h6>
       </div>
