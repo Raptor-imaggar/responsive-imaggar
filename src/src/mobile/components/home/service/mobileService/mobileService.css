@@ -3,16 +3,17 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .mobile-service-heading-container {
     order: 1;
-    width: 500px;
+    max-width: 55%;
     height: 70px;
     text-align: center;
     background-color: #fff;
     border-radius: 40px;
-    box-shadow: 0 0 10px 1px lightgrey;
+    box-shadow: -3.80016px 3.80016px 23.75097px 0px rgba(0, 0, 0, 0.08);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +40,7 @@
     &.selected {
         background-image: linear-gradient(90deg, #E4DCFD 0%, #ffffff 100%);
         color: #000000;
-        box-shadow: 0 0 10px 1px lightgrey;
+        box-shadow: -3.80016px 3.80016px 23.75097px 0px rgba(0, 0, 0, 0.186);
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -70,12 +71,12 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    width: 300px;
+    max-width: 80%;
     padding: 15px 10px; /* Adjust padding */
     cursor: pointer;
     border-radius: 20px;
     margin-bottom: 20px; /* Increase margin for all triggers */
-    box-shadow: 0 0 10px 1px lightgrey;
+    box-shadow: -3.80016px 3.80016px 23.75097px 0px rgba(0, 0, 0, 0.08);
 }
 
 .Collapsible__trigger:hover {
@@ -83,11 +84,10 @@
     color: #000000;
 }
 
-/* Add this CSS to your existing styles */
-/* Add this CSS to your existing styles */
+
 .collapsible-trigger.selected {
     background-image: linear-gradient(90deg, #E4DCFD 10%, #ffffff 90%); /* Adjust the percentage values as needed */
-    color: #000000;
+    color: rgb(132, 18, 198);
     border-radius: 30px; /* You can adjust the value as needed */
 }
 
@@ -96,11 +96,13 @@
 .Collapsible__contentInner {
     text-align: center;
     padding: 20px;
-    border-radius: 40px;
-    box-shadow: 0 0 10px 1px lightgrey;
+    border-radius: 20px;
+    box-shadow: -3.80016px 3.80016px 23.75097px 0px rgba(0, 0, 0, 0.08);
     margin: 20px;
-    max-width: 500px;
+    max-width: 450px;
+    background: linear-gradient(80deg, rgba(255, 255, 255, 0.20) 44.14%, rgba(130, 177, 255, 0.20) 106.5%);
 }
+
 
 .collapsible-icon{
     margin-left: 15px;
@@ -131,16 +133,36 @@
 }
 
 .mobile-service-button {
-    background-color: #4caf50;
     color: white;
     border: none;
+    border-radius: 10px;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
+    box-shadow: -3.80016px 3.80016px 23.75097px 0px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(90deg, #4caf50, #45a049); /* Gradient background */
+    background-size: 200% 100%; /* Background size for gradient animation */
+    transition: color 0.3s, box-shadow 0.3s;
+    animation: gradientChange 3s infinite alternate; /* Gradient color change animation */
 }
+
+.mobile-service-button:hover {
+    color: #f1f1f1; /* Adjust the hover text color as needed */
+    box-shadow: -3.80016px 3.80016px 23.75097px 0px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes gradientChange {
+    0% {
+        background-position: 100% 0; /* Start position of gradient */
+    }
+    100% {
+        background-position: -100% 0; /* End position of gradient */
+    }
+}
+
 
 .mobile-service-image {
     margin-top: 20px;
@@ -148,25 +170,26 @@
 
 /* Add this CSS to your existing styles */
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
+    /* Styles for screens up to 768px */
+
     .mobile-service-container {
         margin-bottom: 30px;
     }
 
     .mobile-service-heading-container {
         width: 100%;
-        border-radius: 20px;
+        border-radius: 50px;
     }
 
     .mobile-service-heading {
         width: 100%;
         height: auto;
         padding: 15px;
-        font-size: 16px;
+        font-size: 14px; /* Adjust the font size for smaller screens */
         margin-right: 0;
         margin-left: 0;
-        border-radius: 20px;
+        border-radius: 50px;
         transition: background-image 0.3s;
     }
 
@@ -177,15 +200,91 @@
     .Collapsible__trigger {
         width: 100%;
         padding: 15px;
-        font-size: 18px;
+        font-size: 16px; /* Adjust the font size for smaller screens */
         margin-bottom: 15px;
     }
 
     .Collapsible__contentInner {
         margin: 10px;
+        font-size: 14px; /* Adjust the font size for smaller screens */
     }
 
     .collapsible-trigger.selected {
-        border-radius: 25px;
+        border-radius: 50px;
+    }
+
+    .mobile-service-title {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+        margin-bottom: 8px;
+    }
+
+    .mobile-service-subtitle {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+        margin-bottom: 8px;
+    }
+
+    .mobile-service-description {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+        margin-bottom: 8px;
+    }
+
+    .mobile-service-button {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Additional styles for screens up to 480px */
+
+    .mobile-service-heading {
+        font-size: 12px;
+    }
+
+    .Collapsible__trigger {
+        font-size: 14px;
+    }
+
+    .mobile-service-title {
+        font-size: 12px;
+    }
+
+    .mobile-service-subtitle {
+        font-size: 10px;
+    }
+
+    .mobile-service-description {
+        font-size: 10px;
+    }
+
+    .mobile-service-button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Additional styles for screens up to 360px */
+
+    .mobile-service-heading {
+        font-size: 10px;
+    }
+
+    .Collapsible__trigger {
+        font-size: 12px;
+    }
+
+    .mobile-service-title {
+        font-size: 10px;
+    }
+
+    .mobile-service-subtitle {
+        font-size: 8px;
+    }
+
+    .mobile-service-description {
+        font-size: 8px;
+    }
+
+    .mobile-service-button {
+        font-size: 8px;
     }
 }

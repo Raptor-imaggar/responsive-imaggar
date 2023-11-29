@@ -1,7 +1,7 @@
 import React from 'react';
 import Landing from '../../components/home/landing'
 import Trusted from '../../components/home/trusted';
-import Service from '../../components/home/service';
+import Service from '../../components/home/service/mobileService/';
 // import Counter from '../../components/home/counter'
 // import Features from '../../components/home/features';
 import Testimonials from '../../components/home/testimonials'
@@ -11,7 +11,7 @@ function Home() {
     <div>
      <Landing />
      <Trusted />
-     {/* <Service /> */}
+     <Service />
      {/* <br/> */}
      {/* <br/> */}
      {/* <Counter /> */}

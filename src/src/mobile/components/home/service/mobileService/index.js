@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Collapsible from 'react-collapsible';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
-import servicesData from '../../../../data/servicesData';
+import servicesData from '../../../../../../data/servicesData';
 import './mobileService.css';
 
 const MobileService = () => {

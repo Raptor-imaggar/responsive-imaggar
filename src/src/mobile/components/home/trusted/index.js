@@ -4,10 +4,10 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './trusted.css';
+import './Mobiletrusted.css';
 import clientData from '../../../../../data/dataClient';
 
-const Trusted = () => {
+const MobileTrusted = () => {
   const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
 
   const settings = {
@@ -68,4 +68,4 @@ const Trusted = () => {
   );
 };
 
-export default Trusted;
+export default MobileTrusted;
