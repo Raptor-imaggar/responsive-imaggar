@@ -1,15 +1,16 @@
+// MobileCounter.js
 import React, { useState, useEffect } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
-import './counter.css';
+import './mobile-counter.css';
 
-const Counter = () => {
+const MobileCounter = () => {
   const [interactions, setInteractions] = useState(0);
   const [transactions, setTransactions] = useState(0);
-  const [rating, setRating] = useState(0); // Initialize rating at 0
+  const [rating, setRating] = useState(0);
   const [projects, setProjects] = useState(0);
   const [isCounting, setIsCounting] = useState(false);
-  const [isAnimated, setIsAnimated] = useState(false); // Track if the numbers are visible
-  
+  const [isAnimated, setIsAnimated] = useState(false);
+
   const targetInteractions = 10;
   const targetTransactions = 10;
   const targetRating = 4.5;
@@ -18,13 +19,12 @@ const Counter = () => {
   const onVisibilityChange = (isVisible) => {
     setIsCounting(isVisible);
     if (isVisible) {
-      setIsAnimated(true); // Add the animation class when numbers become visible
+      setIsAnimated(true);
     }
   };
 
   useEffect(() => {
     if (isCounting) {
-      // Counting logic
       const interactionInterval = setInterval(() => {
         if (interactions < targetInteractions) {
           setInteractions(interactions + 1);
@@ -60,29 +60,37 @@ const Counter = () => {
 
   return (
     <VisibilitySensor onChange={onVisibilityChange}>
-      <div className="counter-container">
-        <div className="counter-item">
-          <div className={`counter-number ${isAnimated ? 'animated-counter-number' : ''}`}>{interactions >= targetInteractions ? targetInteractions : interactions}+</div>
-          <div className="counter-text">Brands</div>
+      <div className="mobile-counter-container">
+        <div className="mobile-counter-item">
+          <div className={`mobile-counter-number ${isAnimated ? 'animated-counter-number' : ''}`}>
+            {interactions >= targetInteractions ? targetInteractions : interactions}+
+          </div>
+          <div className="mobile-counter-text">Brands</div>
         </div>
 
-        <div className="counter-item">
-          <div className={`counter-number ${isAnimated ? 'animated-counter-number' : ''}`}>{transactions >= targetTransactions ? targetTransactions : transactions}+</div>
-          <div className="counter-text">Tools</div>
+        <div className="mobile-counter-item">
+          <div className={`mobile-counter-number ${isAnimated ? 'animated-counter-number' : ''}`}>
+            {transactions >= targetTransactions ? targetTransactions : transactions}+
+          </div>
+          <div className="mobile-counter-text">Tools</div>
         </div>
 
-        <div className="counter-item">
-          <div className={`counter-number ${isAnimated ? 'animated-counter-number' : ''}`}>{rating >= targetRating ? targetRating.toFixed(1) : rating.toFixed(1)}/5</div>
-          <div className="counter-text">Ratings</div>
+        <div className="mobile-counter-item">
+          <div className={`mobile-counter-number ${isAnimated ? 'animated-counter-number' : ''}`}>
+            {rating >= targetRating ? targetRating.toFixed(1) : rating.toFixed(1)}/5
+          </div>
+          <div className="mobile-counter-text">Ratings</div>
         </div>
 
-        <div className="counter-item">
-          <div className={`counter-number ${isAnimated ? 'animated-counter-number' : ''}`}>{projects >= targetProjects ? targetProjects : projects}+</div>
-          <div className="counter-text">Projects</div>
+        <div className="mobile-counter-item">
+          <div className={`mobile-counter-number ${isAnimated ? 'animated-counter-number' : ''}`}>
+            {projects >= targetProjects ? targetProjects : projects}+
+          </div>
+          <div className="mobile-counter-text">Projects</div>
         </div>
       </div>
     </VisibilitySensor>
   );
 };
 
-export default Counter;
+export default MobileCounter;
