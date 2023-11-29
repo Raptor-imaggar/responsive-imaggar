@@ -17,9 +17,25 @@
 .mobile-logo img {
   width: 100%;
 }
+.mobile-sidebar-header {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.mobile-logo-sidebar img {
+  width: 100%;
+  max-width: 120px; /* Adjust max-width as needed */
+}
+
+
+/* Existing CSS... */
 
 .mobile-menu-icon,
-.mobile-close-icon {
+.mobile-close-icon,
+.mobile-back-icon {
   cursor: pointer;
   font-size: 24px;
   color: #333;
@@ -29,12 +45,22 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 1001;
+  color: #f00; /* Set a higher z-index to ensure the icon is above the side bar content */
+}
+
+.mobile-back-icon {
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* Set a higher z-index to ensure the icon is above the side bar content */
 }
 
 .mobile-navbar {
   position: fixed;
   top: 0;
-  right: -30%; /* Start off the screen */
+  right: 0;
   width: 30%;
   height: 100%;
   background-color: #fff;
@@ -45,24 +71,8 @@
   padding: 20px;
   z-index: 999;
   box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
-  transition: right 0.5s ease; /* Add a transition for the right property */
+  transition: width 0.3s ease; /* Add transition for a smooth sliding effect */
 }
-
-.mobile-navbar.open {
-  right: 0; /* Slide in when the navbar is open */
-}
-
-.mobile-logo-sidebar {
-  width: 100%; /* Adjust the width as needed */
-  margin-bottom: 10px;
-  margin-top: 40px; /* Add margin to separate the logo and links */
-}
-
-.mobile-logo-sidebar img {
-  width: 100%;
-}
-
-/* ... (rest of the CSS) */
 
 .mobile-nav__links {
   list-style: none;
@@ -70,16 +80,16 @@
   width: 100%;
   margin: 20px 0; /* Add some margin to create line space */
   text-align: center;
-  margin-top: 20px; /* Center the links */
+  margin-top: 20px;
 }
 
 .mobile-nav--link {
   margin-bottom: 20px;
-  
 }
 
 .mobile-submenu {
-  margin-top: 20px;
+  margin-top: 50px;
+  
 }
 
 .mobile-submenu-item {
@@ -97,4 +107,4 @@
 .mobile-nav--link a:hover,
 .mobile-submenu-item a:hover {
   color: #f00;
-}
+} 

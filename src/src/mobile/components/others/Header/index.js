@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FiMenu, FiX, FiArrowLeft } from 'react-icons/fi';
+import { SiIfixit } from "react-icons/si";
 import './MobileHeader.css';
 import headerMenu from '../../../../../data/menu';
 
@@ -49,7 +50,7 @@ const MobileHeader = () => {
       </div>
       {isMobileMenuOpen ? (
         <div className="mobile-close-icon" onClick={toggleMobileMenu}>
-          <FiX />
+          <SiIfixit />
         </div>
       ) : (
         <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
@@ -57,27 +58,33 @@ const MobileHeader = () => {
         </div>
       )}
       {isMobileMenuOpen && (
-        <nav className="mobile-navbar" ref={sidebarRef}>
-          {currentMenuLevel > 0 && (
-            <div className="mobile-back-icon" onClick={handleBackButtonClick}>
-              <FiArrowLeft />
+        <nav className={`mobile-navbar ${isMobileMenuOpen ? 'open' : ''}`} ref={sidebarRef}>
+          <div className="mobile-sidebar-header">
+            <div className="mobile-logo-sidebar">
+              <img src='./logo.png' alt="Logo" />
             </div>
-          )}
+            {currentMenuLevel > 0 && (
+              <div className="mobile-back-icon" onClick={handleBackButtonClick}>
+                <FiArrowLeft />
+              </div>
+            )}
+          </div>
           {currentMenuLevel === 0 ? (
             <ul className="mobile-nav__links">
-              {headerMenu.map((item, index) => (
-                <li key={index} className="mobile-nav--link">
-                  <a href="#" onClick={() => handleMenuItemClick(item)}>
-                    {item.name.en}
-                  </a>
-                </li>
-              ))}
+            {headerMenu.map((item, index) => (
+             <li key={index} className="mobile-nav--link">
+               <a href="#" onClick={() => handleMenuItemClick(item)}>
+                 {item.icon} {item.name.en}
+               </a>
+             </li>
+           ))}
             </ul>
           ) : (
             <div className="mobile-submenu">
               <ul>
-                {selectedMenuItem.submenu.map((subItem, subIndex) => (
+              {selectedMenuItem.submenu.map((subItem, subIndex) => (
                   <li key={subIndex} className="mobile-submenu-item">
+                    <img src={subItem.image} alt="Submenu Item" className="submenu-image" />
                     <a href={subItem.url}>{subItem.name.en}</a>
                   </li>
                 ))}
