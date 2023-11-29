@@ -1,0 +1,173 @@
+/* Base styles for all screen sizes */
+.mobile-footer {
+  background-color: #fff;
+  border-top: 1px solid #a58cf4;
+  color: black;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+.mobile-footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.mobile-footer-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap to the next line on smaller screens */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-footer-col,
+.mobile-form-sect-tem2,
+.mobile-tem-social-i {
+  width: 100%; /* Full width on mobile */
+  padding: 0 15px;
+  margin-bottom: 20px; /* Add some space between columns */
+}
+
+.mobile-footer-col h4,
+.mobile-footer-col-2 h4,
+.mobile-tem-social-i h4,
+.mobile-subscribe h4 {
+  font-size: 1rem;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap;
+  text-align: left; /* Align to the left */
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-footer-col h4::before,
+.mobile-footer-col-2 h4::before,
+.mobile-tem-social-i h4::before,
+.mobile-subscribe h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: #a58cf4;
+  width: 1.5em;
+  height: 0.1em;
+}
+
+.mobile-footer-col ul li:not(:last-child),
+.mobile-footer-col-2 ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.mobile-footer-col ul li a,
+.mobile-footer-col-2 ul li a {
+  color: black;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobile-footer-col ul li a:hover,
+.mobile-footer-col-2 ul li a:hover {
+  color: #a58cf4;
+  padding-left: 0.5em;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-subscribe,
+.mobile-tem-social-i {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on mobile */
+  align-items: flex-start; /* Align items to the left */
+}
+.mobile-tem-social-i{
+  margin-left: -10px;
+  
+}
+
+.mobile-followus-text{
+  margin-top: 20px;
+}
+.mobile-subscribe input[type='email'] {
+  padding: 0.5em;
+  border: 0.1em solid #ccc;
+  border-radius: 0.4em;
+  width: 100%; /* Full width on mobile */
+  margin-bottom: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mobile-subscribe button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.4em;
+  background-color: #a58cf4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-subscribe button:hover {
+  background-color: white;
+  color: #a58cf4;
+  border: 0.1em solid #a58cf4;
+  transform: scale(1.05);
+}
+
+.mobile-social-links,
+.mobile-tem-social-i .mobile-social-links {
+  display: flex;
+}
+
+.mobile-social-links a,
+.mobile-tem-social-i .mobile-social-links a {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 1em;
+  line-height: 2.5em;
+  transition: all 0.5s ease;
+}
+
+.mobile-social-links a:hover,
+.mobile-tem-social-i .mobile-social-links a:hover {
+  color: #151515;
+  background-color: #fff;
+}
+
+.mobile-social-links a svg,
+.mobile-tem-social-i .mobile-social-links a svg {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.mobile-social-links a svg:hover,
+.mobile-tem-social-i .mobile-social-links a svg:hover {
+  color: #a58cf4;
+  transform: scale(1.1);
+}
+
+.mobile-margin-footer {
+  margin-left: 10px;
+}
+
+/* Add media query for screens smaller than 768px (typical mobile screens) */
+@media (max-width: 768px) {
+  .mobile-footer-col,
+  .mobile-form-sect-tem2,
+  .mobile-tem-social-i {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

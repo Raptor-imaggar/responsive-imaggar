@@ -1,47 +1,52 @@
-// SecondFooter.js
-
 import React, { useEffect, useState } from 'react';
-import './copyrightFooter.css';
+import './mobileSecondFooter.css';
 import { TbSpeakerphone } from 'react-icons/tb';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
-const SecondFooter = () => {
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
-  const [showAnnouncementBar, setShowAnnouncementBar] = useState(true);
+const MobileSecondFooter = () => {
+  const [mobileCurrentYear, setMobileCurrentYear] = useState(new Date().getFullYear());
+  const [mobileShowAnnouncementBar, setMobileShowAnnouncementBar] = useState(true);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentYear(new Date().getFullYear());
+      setMobileCurrentYear(new Date().getFullYear());
     }, 1000 * 60 * 60); // Update every hour
 
     return () => clearInterval(intervalId);
   }, []); // Run once on component mount
 
-  const closeAnnouncementBar = () => {
-    setShowAnnouncementBar(false);
+  const mobileCloseAnnouncementBar = () => {
+    setMobileShowAnnouncementBar(false);
   };
+
+  // Add a condition to render only on mobile
+  const isMobile = window.innerWidth <= 767;
+
+  if (!isMobile) {
+    return null; // Render nothing if not on mobile
+  }
 
   return (
     <div>
-      <footer className={`second-footer ${showAnnouncementBar ? '' : 'no-margin'}`}>
-        <div className="container">
-          <div className="copyright-container">
-            <p>&copy; {currentYear} IMAGGAR Technology Pvt Ltd. All Rights Reserved.</p>
+      <footer className={`mobile-second-footer ${mobileShowAnnouncementBar ? '' : 'no-margin'}`}>
+        <div className="mobile-second-footer-container">
+          <div className="mobile-copyright-container">
+            <p>&copy; {mobileCurrentYear} IMAGGAR Technology Pvt Ltd. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
 
-      <div className={`announcement-bar ${showAnnouncementBar ? '' : 'fade-out'}`}>
-        <div className='announcement-bar-container'>
-          <a href="#" className="announcement-content">
-            <TbSpeakerphone className="announcement-icon" />
+      <div className={`mobile-announcement-bar ${mobileShowAnnouncementBar ? '' : 'fade-out'}`}>
+        <div className='mobile-announcement-bar-container'>
+          <a href="#" className="mobile-announcement-content">
+            <TbSpeakerphone className="mobile-announcement-icon" />
             <p>This is an important announcement.</p>
           </a>
         </div>
-        <AiOutlineCloseCircle className="close-icon" onClick={closeAnnouncementBar} />
+        <AiOutlineCloseCircle className="mobile-announcement-close-icon" onClick={mobileCloseAnnouncementBar} />
       </div>
     </div>
   );
 };
 
-export default SecondFooter;
+export default MobileSecondFooter;

@@ -5,7 +5,7 @@ import Service from '../../components/home/service/mobileService/';
 import Counter from '../../components/home/counter'
 // import Features from '../../components/home/features';
 import Testimonials from '../../components/home/testimonials'
-// import ContactBar from '../../components/home/ContactBar'
+import ContactBar from '../../components/home/ContactBar'
 function Home() {
   return (
     <div>
@@ -17,7 +17,7 @@ function Home() {
      <Counter />
      <br/>
      <Testimonials />
-     {/* <ContactBar /> */}
+     <ContactBar />
      
      
     </div>

@@ -1,12 +1,10 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-// import { TbSpeakerphone } from 'react-icons/tb';
-// import { AiOutlineCloseCircle } from 'react-icons/ai';
-import './Footer.css';
+import './MobileFooter.css';
 import { footerData } from '../../../../../data/footer';
 import CopyrightFooter from '../copyrightFooter';
 
-const Footer = () => {
+const MobileFooter = () => {
   const renderLinks = (links) => {
     return links.map((link, index) => (
       <li key={index}>
@@ -17,27 +15,27 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="footer">
-        <div className="footer-container footer-row">
+      <footer className="mobile-footer">
+        <div className="mobile-footer-container mobile-footer-row">
           {footerData.map((section, index) => (
-            <div className="footer-col margin-footer" key={index}>
+            <div className="mobile-footer-col mobile-margin-footer" key={index}>
               <h4>{section.title}</h4>
               <ul>{renderLinks(section.links)}</ul>
             </div>
           ))}
           
-          <div className="footer-col-2 ">
-            <div className="form-sect-tem2 margin-footer">
-              <div className="tem-social-i">
+          <div className="mobile-footer-col-2 ">
+            <div className="mobile-form-sect-tem2 mobile-margin-footer">
+              <div className="mobile-tem-social-i">
                 <h4>Subscribe</h4>
-                <div className="subscribe">
+                <div className="mobile-subscribe">
                   <input type='email' placeholder="Subscribe" />
                   <button>Subscribe</button>
                 </div>
-                <div className="tem-social-i">
+                <div className="mobile-tem-social-i mobile-followus-text">
                   {/* Social media links */}
                   <h4>follow us</h4>
-                  <div className="social-links">
+                  <div className="mobile-social-links">
                     <a href="#"><FaFacebookF /></a>
                     <a href="#"><FaTwitter /></a>
                     <a href="#"><FaInstagram /></a>
@@ -50,13 +48,10 @@ const Footer = () => {
         </div>
       </footer>
       <CopyrightFooter />
-      {/* Announcement Bar */}
       
-
-      {/* Copyright Footer */}
       
     </>
   );
 };
 
-export default Footer;
+export default MobileFooter;

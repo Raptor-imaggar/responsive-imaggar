@@ -16,7 +16,7 @@ const MobileRoutes = () => {
       <Header />
       <Home /> 
       {/* <SubscribePopup /> */}
-      {/* <Footer /> */}
+      <Footer />
       </>} />
      
       

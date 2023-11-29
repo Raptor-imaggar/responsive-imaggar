@@ -19,7 +19,7 @@
 }
 
 .mobile-testimonial-title h6 {
-  font-size: 12px; /* Adjusted font size for mobile */
+  font-size: 10px; /* Adjusted font size for mobile */
 }
 
 .mobile-testimonial {
@@ -27,7 +27,7 @@
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  max-width: 70%;
+  max-width: 90%;
   height: auto;
   min-height: 250px;
   box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.075);
@@ -43,7 +43,8 @@
   font-size: 14px;
   text-align: center;
   margin: 10px 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Proxima Nova", sans-serif;
+  
 }
 
 .mobile-testimonial-line {
@@ -56,7 +57,7 @@
   align-items: center;
   padding: 0 5px;
   justify-content: space-between;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .mobile-person-info {
@@ -82,7 +83,7 @@
 
 .mobile-person-name {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 5px;
 }
 
