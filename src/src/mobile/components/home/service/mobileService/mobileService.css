@@ -11,7 +11,7 @@
     max-width: 55%;
     height: 70px;
     text-align: center;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 40px;
     box-shadow: -3.80016px 3.80016px 23.75097px 0px rgba(0, 0, 0, 0.08);
     display: flex;

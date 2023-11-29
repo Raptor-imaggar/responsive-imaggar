@@ -121,7 +121,7 @@
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
 
-.mobile-close-icon:hover {
+.mobile-announcement-close-icon:hover {
   transform: scale(1.2);
   opacity: 0.8;
   border-radius: 50%;
