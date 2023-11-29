@@ -9,9 +9,9 @@ import ContactBar from '../../components/home/ContactBar'
 function Home() {
   return (
     <div>
-     {/* <Landing />
+     <Landing />
      <Trusted />
-     <Service /> */}
+     {/* <Service /> */}
      {/* <br/> */}
      {/* <br/> */}
      {/* <Counter /> */}

@@ -1,62 +1,99 @@
 /* ClientSlider container */
-.client-slider {
-    width: 80%; /* Adjust the width as needed */
-    margin: 0 auto;
+.mobile-client-slider {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+}
+
+/* Slider item (each client logo) */
+.mobile-client-slider .mobile-client-slide {
+  text-align: center;
+}
+
+/* Image style */
+.mobile-client-slider .mobile-client-slide img {
+  max-width: 100%; /* Adjust the max-width as needed */
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Dot indicator (optional) */
+.mobile-client-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mobile-client-slider .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.mobile-client-slider .slick-dots li button {
+  font-size: 12px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mobile-client-slider .slick-dots li.slick-active button {
+  background-color: #333;
+  color: #fff;
+}
+
+.mobile-client-slider h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Hidden by default, visible on mobile */
+.mobile-client-slider.hidden {
+  display: none;
+}
+
+.mobile-client-slider.visible {
+  display: block;
+}
+
+/* Responsive adjustments for different mobile sizes */
+@media only screen and (max-width: 320px) {
+  .mobile-client-slider .mobile-client-slide img {
+    max-width: 80%; /* Adjust the max-width as needed */
   }
-  
-  /* Slider item (each client logo) */
-  .client-slide {
-    text-align: center;
+  .mobile-client-slider h2 {
+    font-size: 16px; /* Adjust the font size as needed */
   }
-  
-  /* Image style */
-  .client-slide img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .mobile-client-slider .mobile-client-slide img {
+    max-width: 70%; /* Adjust the max-width as needed */
   }
-  
-  /* Dot indicator (optional) */
-  .slick-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  .mobile-client-slider h2 {
+    font-size: 18px; /* Adjust the font size as needed */
   }
-  
-  .slick-dots li {
-    display: inline-block;
-    margin: 0 5px;
-    cursor: pointer;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .mobile-client-slider .mobile-client-slide img {
+    max-width: 60%; /* Adjust the max-width as needed */
   }
-  
-  .slick-dots li button {
-    font-size: 12px;
-    background-color: transparent;
-    color: #333;
-    border: 1px solid #333;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
-    text-align: center;
-    outline: none;
-    transition: background-color 0.3s, color 0.3s;
+  .mobile-client-slider h2 {
+    font-size: 20px; /* Adjust the font size as needed */
   }
-  
-  .slick-dots li.slick-active button {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .client-slider h2 {
-    font-size: 24px; /* Adjust the font size */
-    color: #333; /* Text color */
-    margin-bottom: 20px; /* Add spacing below the heading */
-    font-weight: bold; /* Make the text bold */
-    text-transform: uppercase; /* Convert text to uppercase */
-    text-align: center;
-  }
+}
