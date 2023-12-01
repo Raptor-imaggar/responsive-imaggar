@@ -1,53 +1,100 @@
-import React, { useState } from 'react';
-import './LoginForm.css';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
-
+import React from 'react';
+import './LoginForm.css'; // Import your CSS file
+import './SignupForm.css'; // Import your CSS file
+import { useState } from 'react';
 const LoginForm = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
-
-  const handleLogin = () => {
-    // Add your login logic here
-    console.log('Username:', username);
-    console.log('Password:', password);
-    console.log('Show Password:', showPassword);
-    // You can add your authentication logic here
-  };
-
   return (
-    <div className="login-form">
-      <h2>WELCOME IMAGGAR OFFICIALS</h2>
-
-      <label>
-        Username:
-        <input
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-      </label>
-
-      <label>
-        Password:
-        <div className="password-input">
-          <input
-            type={showPassword ? 'text' : 'password'}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <span
-            className="password-toggle-icon"
-            onClick={() => setShowPassword(!showPassword)}
-          >
-            {showPassword ? <FaEyeSlash /> : <FaEye />}
-          </span>
-        </div>
-      </label>
-
-      <button onClick={handleLogin}>Login</button>
+    <div className="form-container">
+      <h2>Sign In</h2>
+      <form>
+        <input type="text" placeholder="Username" className="form-input" required />
+        <input type="password" placeholder="Password" className="form-input" required />
+        <button type="submit" className="form-btn">Login</button>
+      </form>
+      <div className="additional-options">
+        <p>
+          <a href="#forgot-password">Forgot Password?</a>
+        </p>
+        <p>
+          Don't have an account? <a href="#sign-up">Sign Up</a>
+        </p>
+        <p>
+          Or login with:
+          <button className="login-with-btn">Google</button>
+          <button className="login-with-btn">Facebook</button>
+        </p>
+      </div>
     </div>
   );
 };
 
-export default LoginForm;
+
+
+
+
+const SignupForm = ({ toggleForms }) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle signup submission logic here
+    console.log(`Username: ${username}, Email: ${email}, Password: ${password}`);
+  };
+
+  return (
+    <div className="form-container">
+      <h2>Sign Up</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={handleUsernameChange}
+          className="form-input"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={handleEmailChange}
+          className="form-input"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={handlePasswordChange}
+          className="form-input"
+          required
+        />
+        <button type="submit" className="form-btn">
+          Sign Up
+        </button>
+      </form>
+      <p className="toggle-form">
+        Already have an account?{' '}
+        <button onClick={toggleForms} className="toggle-btn">
+          Log In
+        </button>
+      </p>
+    </div>
+  );
+};
+
+export default {SignupForm, LoginForm };

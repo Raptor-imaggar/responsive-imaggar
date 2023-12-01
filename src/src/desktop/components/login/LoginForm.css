@@ -1,72 +1,61 @@
-.login-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-    padding: 30px;
-    box-shadow: -4px 4px 25px 0px rgba(0, 0, 0, 0.075);
-    border-radius: 30px;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    max-height: 800px;
-    transition: all 0.3s ease-in-out; /* Added transition for smooth animations */
-  }
-  
-  .login-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Proxima Nova', sans-serif; /* Specify Proxima Nova as the font */
-    transition: all 0.3s ease-in-out; /* Added transition for smooth animations */
-  }
-  
-  .login-form h2:hover {
-    transform: scale(1.1); /* Added a scale effect on hover */
-  }
-  
-  
-  .login-form label {
-    margin-bottom: 10px;
-  }
-  
-  .login-form input {
-    width: calc(100% - 0px);
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 2px solid dimgrey;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out; /* Added transition for smooth animations */
-  }
-  
-  .login-form input:focus {
-    border-color: #4285f4; /* Change the border color on focus */
-  }
-  
-  
-  .password-input {
-    position: relative;
-    display: flex;
-  }
-  
-  .password-toggle-icon {
-    margin-left: -25px;
-    cursor: pointer;
-    align-self: center;
-    transition: all 0.3s ease-in-out; /* Added transition for smooth animations */
-  }
-  
-  .login-form button {
-    background: linear-gradient(to right, #33ccff94 0%, #ff99cc89 100%);
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out; /* Added transition for smooth animations */
-  }
-  
-  .login-form button:hover {
-    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
-    transform: scale(1.05); /* Added a slight scale effect on hover */
-  }
-  
+
+
+/* Styles for the form inputs */
+.form-input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Styles for the login button */
+.form-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Styles for additional options */
+.additional-options {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.additional-options p {
+  margin: 5px 0;
+}
+
+.additional-options a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.additional-options a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for login with buttons */
+.login-with-btn {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-with-btn:hover {
+  background-color: #f9f9f9;
+}

@@ -1,0 +1,34 @@
+/* LoginPage.css */
+
+.login-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .login-form-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; /* Adjust top padding for spacing */
+    position: relative;
+  }
+  
+  .login-form-container img {
+    position: absolute;
+    margin: 50px;
+    top: 10px; /* Adjust the top position */
+    left: 10px; /* Adjust the right position */
+    width: 200px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .side-panel {
+    flex: 1;
+   
+    border-bottom-left-radius: 300px;
+    background-color: #A58CF4;
+    opacity: 50%;
+  }
+  
