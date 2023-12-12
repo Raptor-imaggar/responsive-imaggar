@@ -8,6 +8,7 @@ import SubscribePopup from './components/others/SubscribePopup';
 import Careers from './pages/carrers';
 import Login from './pages/login';
 import Contact from './pages/contact';
+import Site from './pages/products/site';
 
 const DesktopRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const DesktopRoutes = () => {
       
       <Route  path="/Careers" element={<><Header /><Careers /><Footer /></>} />
       <Route  path="/contact" element={<><Header /><Contact /><Footer /></>} />
+      <Route  path="/products/site" element={<><Header /><Site /><Footer /></>} />
       <Route exact path="*" element={<Home />} />
     </RouterRoutes>
   );
