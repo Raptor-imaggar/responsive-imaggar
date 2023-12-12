@@ -91,7 +91,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #ff3a6b, #8e44ad);
+  background: linear-gradient(45deg, #b73aff, #8e44ad);
   border-radius: 4px;
   z-index: -1;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
@@ -143,13 +143,13 @@
 
 /* Dynamic gradient change on hover */
 .login-btn:hover {
-  background: linear-gradient(45deg, #ff3a6b, #8e44ad);
-  box-shadow: 0 20px 40px rgba(255, 58, 107, 0.4); /* Subtle glow on hover */
+  background: linear-gradient(45deg, #704298, #8e44ad);
+  box-shadow: 0 20px 40px rgba(202, 58, 255, 0.4); /* Subtle glow on hover */
 }
 
 .get-started-btn:hover {
-  background: linear-gradient(45deg, #3498db, #2ecc71);
-  box-shadow: 0 20px 40px rgba(52, 152, 219, 0.4); /* Subtle glow on hover */
+  background: linear-gradient(45deg, #b297ec, #8d2ecc);
+  box-shadow: 0 20px 40px rgba(149, 52, 219, 0.4); /* Subtle glow on hover */
 }
 
 

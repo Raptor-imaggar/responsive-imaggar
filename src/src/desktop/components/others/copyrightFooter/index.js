@@ -24,9 +24,21 @@ const SecondFooter = () => {
   return (
     <div>
       <footer className={`second-footer ${showAnnouncementBar ? '' : 'no-margin'}`}>
-        <div className="container">
+        <div className="copyright-main-container">
           <div className="copyright-container">
-            <p>&copy; {currentYear} IMAGGAR Technology Pvt Ltd. All Rights Reserved.</p>
+            <div className="copyright-content">
+              <ul className="copyright-list">
+                <li><a href="/legal" className="copyright-text-hover">Legal</a></li>
+                <li><a href="/privacy-notice" className="copyright-text-hover">Privacy Notice</a></li>
+                <li><a href="/site-terms" className="copyright-text-hover">Site Terms</a></li>
+                <li><a href="/cookie-policy" className="copyright-text-hover">Cookie Policy</a></li>
+                <li><a href="/security" className="copyright-text-hover">Security</a></li>
+                <li><a href="/accessibility" className="copyright-text-hover">Accessibility</a></li>
+                <li><a href="/unsubscribe" className="copyright-text-hover">Unsubscribe</a></li>
+                <li><a href="/sitemap" className="copyright-text-hover">Sitemap</a></li>
+              </ul>
+              <p className="copyright-text copyright-text-hover">&copy; {currentYear} IMAGGAR Technology Pvt Ltd. All Rights Reserved.</p>
+            </div>
           </div>
         </div>
       </footer>

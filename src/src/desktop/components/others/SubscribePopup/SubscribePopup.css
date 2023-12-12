@@ -80,17 +80,42 @@
 
 .popup-content button {
   padding: 10px;
-  background-color: #007bff;
+  background: linear-gradient(45deg, #8c36d8, #5c1a82);
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .popup-content button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(45deg, #7d2fbf, #4d176b); /* Darker gradient on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a subtle box-shadow on hover */
+  color: #ffffff; /* Change text color on hover */
 }
+
+.popup-content button span {
+  display: inline-block;
+  transform-origin: 50% 100%;
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
 
 /* Media queries for responsiveness */
 
@@ -111,7 +136,7 @@
 /* For screens up to 900px */
 @media (max-width: 900px) {
   .popup-subscribe-main {
-    width: 100%;
+    width: 70%;
     height: 80vh;
   }
 
@@ -134,7 +159,7 @@
 /* For screens up to 768px */
 @media (max-width: 768px) {
   .popup-subscribe-main {
-    width: 100%;
+    width: 60%;
     height: 100vh;
   }
 

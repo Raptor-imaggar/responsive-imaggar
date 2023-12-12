@@ -1,8 +1,10 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+// import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import './MobileFooter.css';
 import { footerData } from '../../../../../data/footer';
 import CopyrightFooter from '../copyrightFooter';
+import MobileSocialMediaFooter from '../MobilesocialMediaFooter';
+
 
 const MobileFooter = () => {
   const renderLinks = (links) => {
@@ -32,21 +34,17 @@ const MobileFooter = () => {
                   <input type='email' placeholder="Subscribe" />
                   <button>Subscribe</button>
                 </div>
-                <div className="mobile-tem-social-i mobile-followus-text">
+                <div className="Mobilefooterdes mobile-followus-text">
                   {/* Social media links */}
                   <h4>follow us</h4>
-                  <div className="mobile-social-links">
-                    <a href="#"><FaFacebookF /></a>
-                    <a href="#"><FaTwitter /></a>
-                    <a href="#"><FaInstagram /></a>
-                    <a href="#"><FaLinkedinIn /></a>
-                  </div>
+                  <p>Shape the New Era of Customer Service with Generative AI</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </footer>
+      <MobileSocialMediaFooter />
       <CopyrightFooter />
       
       

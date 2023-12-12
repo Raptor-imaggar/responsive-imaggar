@@ -20,7 +20,7 @@ const DesktopRoutes = () => {
       
       <Route  path="/Careers" element={<><Header /><Careers /><Footer /></>} />
       <Route  path="/contact" element={<><Header /><Contact /><Footer /></>} />
-      <Route  path="/products/site" element={<><Header /><Site /><Footer /></>} />
+      <Route  path="/products" element={<><Header /><Site /><Footer /></>} />
       <Route exact path="*" element={<Home />} />
     </RouterRoutes>
   );
