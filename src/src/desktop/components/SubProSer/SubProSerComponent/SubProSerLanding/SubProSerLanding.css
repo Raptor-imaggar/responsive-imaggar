@@ -1,0 +1,100 @@
+.SubProSer_landing-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.SubProSer_landing-row-fluid {
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  height: auto;
+  background: linear-gradient(rgb(7, 6, 36) -17.19%, rgba(7, 6, 36, 0) 111.4%),
+    linear-gradient(86.97deg, rgba(255, 168, 0, 0.4) -0.67%, rgba(25, 187, 125, 0.4) 24.91%, rgba(0, 82, 204, 0.4) 48.82%, rgba(69, 164, 236, 0.4) 72.18%, rgba(184, 95, 255, 0.4) 88.31%),
+    rgb(7, 6, 36);
+}
+
+.SubProSer_landing-text-col {
+  padding: 20px;
+  text-align: center; /* Center the content horizontally */
+}
+
+.SubProSer_landing-text-col h1 {
+  color: #8c36d8;
+  font-size: 5em;
+}
+
+.SubProSer_landing-praragraph {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.button-SubProSer_landingpage {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #8c36d8;
+  color: #fff;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.button-SubProSer_landingpage:hover {
+  background-color: #6b258b;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.SubProSer-landing-text {
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .SubProSer_landing-text-col h1 {
+    font-size: 2em;
+  }
+
+  .SubProSer_landing-praragraph {
+    font-size: 0.5em;
+  }
+
+  .button-SubProSer_landingpage {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .SubProSer_landing-text-col h1 {
+    font-size: 3em;
+  }
+
+  .SubProSer_landing-praragraph {
+    font-size: 0.7em;
+  }
+
+  .button-SubProSer_landingpage {
+    font-size: 0.7em;
+    padding: 8px 15px;
+  }
+
+  .SubProSer_landing-row-fluid {
+    padding: 5%;
+    margin-top: 20px;
+  }
+
+  .SubProSer_landing-text-col {
+    padding: 10px;
+  }
+
+  .SubProSer_landing-image-col {
+    margin-bottom: 20px;
+  }
+}

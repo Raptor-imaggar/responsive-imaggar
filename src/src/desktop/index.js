@@ -9,6 +9,7 @@ import Careers from './pages/carrers';
 import Login from './pages/login';
 import Contact from './pages/contact';
 import ProSer from './pages/ProSer';
+import SubProSer from './pages/SubProSer';
 
 const DesktopRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const DesktopRoutes = () => {
       <Route  path="/Careers" element={<><Header /><Careers /><Footer /></>} />
       <Route  path="/contact" element={<><Header /><Contact /><Footer /></>} />
       <Route  path="/products" element={<><Header /><ProSer /><Footer /></>} />
+      <Route  path="/sub" element={<><Header /><SubProSer /><Footer /></>} />
       <Route exact path="*" element={<Home />} />
     </RouterRoutes>
   );
