@@ -31,9 +31,10 @@ const Footer = () => {
                 <div className="subscribe">
                   <input type='email' placeholder="Subscribe" />
                   <button>Subscribe</button>
+                
                 </div>
                 <div className="footerdes">
-                  <h4>Des</h4>
+               
                   {/* Replace social links with a paragraph */}
                   <p>Shape the New Era of Customer Service with Generative AI</p>
                 </div>
