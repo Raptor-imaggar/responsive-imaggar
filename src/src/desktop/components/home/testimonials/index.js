@@ -34,57 +34,55 @@ const Testimonial = ({ logo, content, personPic, personName, personPosition, cus
 
 const Testimonials = () => {
   const settings = {
-    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Show 2 testimonials on mobile screens
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false, // Hide navigation arrows
+    arrows: false,
     responsive: [
       {
-        breakpoint: 1400, // Large desktops and smaller
+        breakpoint: 1400,
         settings: {
-          slidesToShow: 3, // Show 3 testimonials
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 1200, // Large desktops and smaller
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 3, // Show 3 testimonials
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 992, // Desktops and smaller
+        breakpoint: 992,
         settings: {
-          slidesToShow: 2, // Show 2 testimonials
+          slidesToShow: 2,
         },
       },
       {
-        breakpoint: 768, // Tablets and smaller
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1, // Show 1 testimonial
+          slidesToShow: 1,
         },
       },
       {
-        breakpoint: 480, // Mobile devices
+        breakpoint: 480,
         settings: {
-          slidesToShow: 1, // Show 1 testimonial
+          slidesToShow: 1,
         },
       },
     ],
   };
-  
 
   return (
     <div className='testimonials-container '>
       <div className='testimonial-title'>
         <h1>Testimonials Here</h1>
-        <h6>How our Clients Felt !</h6>
+        <h6>How our Clients Felt!</h6>
       </div>
 
-      <Slider {...settings}>
+      <Slider {...settings} dots={true}>
         {testimonialData.map((testimonial, index) => (
           <Testimonial key={index} {...testimonial} />
         ))}

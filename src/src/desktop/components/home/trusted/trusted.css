@@ -1,15 +1,15 @@
 /* ClientSlider container */
 .client-slider {
-    width: 80%; /* Adjust the width as needed */
+    width: 80%; 
     margin: 0 auto;
   }
   
-  /* Slider item (each client logo) */
+  
   .client-slide {
     text-align: center;
   }
   
-  /* Image style */
+
   .client-slide img {
     max-width: 100%;
     height: auto;
@@ -20,7 +20,7 @@
     border-radius: 5px;
   }
   
-  /* Dot indicator (optional) */
+  
   .slick-dots {
     display: flex;
     justify-content: center;
@@ -53,10 +53,11 @@
   }
   
   .client-slider h2 {
-    font-size: 24px; /* Adjust the font size */
-    color: #333; /* Text color */
-    margin-bottom: 20px; /* Add spacing below the heading */
-    font-weight: bold; /* Make the text bold */
-    text-transform: uppercase; /* Convert text to uppercase */
+    font-size: 30px; 
+    color: #333; 
+    margin-bottom: 40px;
+    font-weight:bold;
+    text-transform: uppercase; 
     text-align: center;
+    
   }

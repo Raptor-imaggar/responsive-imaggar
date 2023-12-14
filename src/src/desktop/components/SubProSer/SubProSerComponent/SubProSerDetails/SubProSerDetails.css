@@ -1,0 +1,126 @@
+/* SubProSerDetails.css */
+
+.SubProSerDetails-main {
+    margin-top: 50px;
+  }
+  
+  .SubProSerDetailsContentIntro-container {
+    text-align: center;
+  }
+  
+  .SubProSerDetailsContentIntro-heading {
+    color: #000000;
+    font-size: 3em;
+    margin-bottom: 10px;
+    display: inline-block;
+    max-width: 60%; /* Adjust as needed */
+  }
+  
+  .SubProSerDetailsContentIntro-paragraph {
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 1.5;
+    color: #4a4949;
+    margin-bottom: 20px;
+    display: inline-block;
+    max-width: 60%; /* Adjust as needed */
+  }
+  
+  .SubProSer-details-row-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+  
+  .SubProSer-details-even {
+    background: linear-gradient(90deg, #f6f3ff 0%, rgba(159, 66, 226, 0.214) 100%);
+  }
+  /* .SubProSer-details-odd {
+    background: linear-gradient(to left, #f6f3ff 0%, rgba(159, 66, 226, 0.214) 100%);
+} */
+
+  .SubProSer-details-col {
+    flex: 1;
+    
+  }
+  
+  .SubProSer-details-text-col {
+    padding: 20px;
+  }
+  
+  .SubProSer-details-text-col h1 {
+    color: #8c36d8;
+    font-size: 2.5em;
+  }
+  
+  .SubProSer-details-paragraph {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .SubProSer-details-image-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+  }
+  
+  .SubProSer-details-image-col img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  .SubProSer-details-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    .SubProSer-details-text-col h1 {
+      font-size: 1em;
+    }
+  
+    .SubProSer-details-paragraph {
+      font-size: 0.5em;
+    }
+  
+    .button-SubProSer-detailspage {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .SubProSer-details-text-col h1 {
+      font-size: 1em;
+    }
+  
+    .SubProSer-details-paragraph {
+      font-size: 0.7em;
+    }
+  
+    .button-SubProSer-detailspage {
+      font-size: 0.7em;
+      padding: 8px 15px;
+    }
+  
+    .SubProSer-details-row-fluid {
+      padding: 5%;
+      margin-top: 20px;
+    }
+  
+    .SubProSer-details-text-col {
+      padding: 10px;
+    }
+  
+    .SubProSer-details-image-col {
+      margin-bottom: 20px;
+    }
+  }
+  

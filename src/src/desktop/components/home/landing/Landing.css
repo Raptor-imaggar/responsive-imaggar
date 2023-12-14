@@ -82,6 +82,7 @@
   transform: scale(1.05);
   box-shadow: -4px 4px 25px 0px rgba(0, 0, 0, 0.075);
   border-radius: 20px;
+  padding: 4%;
 }
 
 .card h2 {
@@ -93,6 +94,7 @@
 .card:hover h2 {
   color: #8c36d8;
   transform: translateY(-10px);
+  
 }
 
 .card p {

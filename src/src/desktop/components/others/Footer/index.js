@@ -1,10 +1,8 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-// import { TbSpeakerphone } from 'react-icons/tb';
-// import { AiOutlineCloseCircle } from 'react-icons/ai';
 import './Footer.css';
 import { footerData } from '../../../../../data/footer';
 import CopyrightFooter from '../copyrightFooter';
+import SocialMediaFooter from '../socialMediaFooter';
 
 const Footer = () => {
   const renderLinks = (links) => {
@@ -26,35 +24,26 @@ const Footer = () => {
             </div>
           ))}
           
-          <div className="footer-col-2 ">
+          <div className="footer-col-2">
             <div className="form-sect-tem2 margin-footer">
-              <div className="tem-social-i">
+              <div className="">
                 <h4>Subscribe</h4>
                 <div className="subscribe">
                   <input type='email' placeholder="Subscribe" />
                   <button>Subscribe</button>
                 </div>
-                <div className="tem-social-i">
-                  {/* Social media links */}
-                  <h4>follow us</h4>
-                  <div className="social-links">
-                    <a href="#"><FaFacebookF /></a>
-                    <a href="#"><FaTwitter /></a>
-                    <a href="#"><FaInstagram /></a>
-                    <a href="#"><FaLinkedinIn /></a>
-                  </div>
+                <div className="footerdes">
+                  <h4>Des</h4>
+                  {/* Replace social links with a paragraph */}
+                  <p>Shape the New Era of Customer Service with Generative AI</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </footer>
+      <SocialMediaFooter />
       <CopyrightFooter />
-      {/* Announcement Bar */}
-      
-
-      {/* Copyright Footer */}
-      
     </>
   );
 };

@@ -1,10 +1,8 @@
-/* Base styles for all screen sizes */
 .footer {
   background-color: #fff;
   border-top: 1px solid #a58cf4;
   color: black;
   padding: 20px 0;
-  
 }
 
 .footer-container {
@@ -29,7 +27,7 @@ ul {
 }
 
 .footer-col h4 {
-  font-size: 1.2rem; /* Updated to relative unit */
+  font-size: 1.2rem;
   color: black;
   text-transform: capitalize;
   margin-bottom: 15px;
@@ -44,8 +42,8 @@ ul {
   left: 0;
   bottom: -5px;
   background-color: #a58cf4;
-  width: 1.5em; /* Updated to relative unit */
-  height: 0.1em; /* Updated to relative unit */
+  width: 1.5em;
+  height: 0.1em;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -55,7 +53,7 @@ ul {
 .footer-col ul li a {
   color: black;
   display: block;
-  font-size: 1rem; /* Updated to relative unit */
+  font-size: 1rem;
   font-weight: 300;
   text-transform: capitalize;
   text-decoration: none;
@@ -64,7 +62,7 @@ ul {
 
 .footer-col ul li a:hover {
   color: #a58cf4;
-  padding-left: 0.5em; /* Updated to relative unit */
+  padding-left: 0.5em;
   transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -77,13 +75,13 @@ ul {
 .footer-col-2 h4,
 .tem-social-i h4,
 .subscribe h4 {
-  font-size: 1.2rem; /* Updated to relative unit */
+  font-size: 1.2rem;
   color: black;
   text-transform: capitalize;
   margin-bottom: 15px;
   font-weight: 500;
   position: relative;
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap;
   transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -95,15 +93,15 @@ ul {
   left: 0;
   bottom: -5px;
   background-color: #a58cf4;
-  width: 1.5em; /* Updated to relative unit */
-  height: 0.1em; /* Updated to relative unit */
+  width: 1.5em;
+  height: 0.1em;
 }
 
 .footer-col-2 h4:hover,
 .tem-social-i h4:hover,
 .subscribe h4:hover {
   color: #a58cf4;
-  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.2); /* Updated to relative unit */
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
 }
 
@@ -114,18 +112,18 @@ ul {
 }
 
 .subscribe input[type='email'] {
-  padding: 0.5em; /* Updated to relative unit */
-  border: 0.1em solid #ccc; /* Updated to relative unit */
-  border-radius: 0.4em; /* Updated to relative unit */
-  width: 10em; /* Updated to relative unit */
-  margin-right: 1em; /* Updated to relative unit */
+  padding: 0.5em;
+  border: 0.1em solid #ccc;
+  border-radius: 0.4em;
+  width: 10em;
+  margin-right: 1em;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .subscribe button {
-  padding: 0.5em 1em; /* Updated to relative unit */
+  padding: 0.5em 1em;
   border: none;
-  border-radius: 0.4em; /* Updated to relative unit */
+  border-radius: 0.4em;
   background-color: #a58cf4;
   color: white;
   cursor: pointer;
@@ -135,7 +133,7 @@ ul {
 .subscribe button:hover {
   background-color: white;
   color: #a58cf4;
-  border: 0.1em solid #a58cf4; /* Updated to relative unit */
+  border: 0.1em solid #a58cf4;
   transform: scale(1.05);
 }
 
@@ -149,12 +147,12 @@ ul {
   color: black;
   background-color: rgba(255, 255, 255, 0.2);
   display: inline-block;
-  height: 2.5em; /* Updated to relative unit */
-  width: 2.5em; /* Updated to relative unit */
+  height: 2.5em;
+  width: 2.5em;
   border-radius: 50%;
   text-align: center;
-  margin-right: 1em; /* Updated to relative unit */
-  line-height: 2.5em; /* Updated to relative unit */
+  margin-right: 1em;
+  line-height: 2.5em;
   transition: all 0.5s ease;
 }
 
@@ -167,7 +165,7 @@ ul {
 .social-links a svg,
 .tem-social-i .social-links a svg {
   color: #333;
-  font-size: 1.5em; /* Updated to relative unit */
+  font-size: 1.5em;
 }
 
 .social-links a svg:hover,
@@ -175,10 +173,11 @@ ul {
   color: #a58cf4;
   transform: scale(1.1);
 }
-.margin-footer{
+
+.margin-footer {
   margin-left: 10px;
 }
-/* Media Queries for Responsive Design */
+
 @media screen and (max-width: 1200px) {
   .footer-col,
   .footer-col-2,
@@ -196,84 +195,7 @@ ul {
   }
 }
 
-/* Add this CSS to your existing styles or create a new CSS file */
-/* Add this CSS to your existing styles or create a new CSS file */
-/* Add this CSS to your existing styles or create a new CSS file */
-
-/* Add this CSS to your existing styles or create a new CSS file */
-
-.announcement-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8d7da;
-  color: #721c24;
-  padding: 10px;
-  font-size: 1rem;
-  border-top: 1px solid #721c24;
-  z-index: 20;
-  max-height: 60px;
+.footerdes p{
+  font-size: 12px;
+  max-width: 70%;
 }
-
-.announcement-bar-container {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  height: 100%;
-}
-
-.announcement-content {
-  text-decoration: underline; /* Add underline to the text */
-  color: #721c24;
-  display: flex;
-  align-items: center;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.announcement-content:hover {
-  color: #a58cf4;
-  transform: scale(1.05);
-}
-
-.announcement-icon {
-  margin-right: 10px;
-  animation: ringing 0.7s infinite;
-  font-size: 20px;
-}
-
-@keyframes ringing {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.close-icon {
-  margin-left: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
-}
-
-.close-icon:hover {
-  transform: scale(1.2);
-  opacity: 0.8;
-  border-radius: 50%;
-  box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; /* Add red glow effect */
-}
-
-.announcement-bar p {
-  margin: 0;
-  cursor: pointer;
-}
-

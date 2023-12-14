@@ -171,3 +171,8 @@ ul {
     width: 100%; /* Full width on smaller screens */
   }
 }
+
+.Mobilefooterdes p{
+  font-size: 12px;
+  max-width: 70%;
+}

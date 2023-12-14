@@ -239,3 +239,24 @@
     max-height: 30px; 
   }
 }
+
+
+/* Add these styles to your existing CSS file or in your component file */
+
+.slick-dots li {
+  margin: 0 2px; /* Adjust the margin between dots as needed */
+}
+
+.slick-dots li button {
+  font-size:0% ; /* Adjust the font size of the dots as needed */
+  color: #fff; /* Adjust the color of the dots as needed */
+  opacity: 0.7;
+  background-color:#8c36d8 ;
+  
+  border: none; /* Adjust the opacity of the dots as needed */
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1; 
+  background-color: #494646bb;
+}

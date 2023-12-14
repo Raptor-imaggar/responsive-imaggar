@@ -1,0 +1,49 @@
+/* MobilesocialMediaFooter.css */
+
+.MobilesocialMediaFooter-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  height: auto;
+}
+
+.MobilesocialMediaFooter-left {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-footer-logo {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.mobile-footersocial-icon,
+.mobile-footer-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #8c36d8;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mobile-footersocial-icon:hover,
+.mobile-footer-icon:hover {
+  color: #4d1b6e;
+  transform: scale(1.2) rotate(360deg);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .MobilesocialMediaFooter-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .MobilesocialMediaFooter-left {
+    margin-bottom: 20px;
+  }
+
+  
+}
