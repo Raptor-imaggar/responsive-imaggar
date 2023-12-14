@@ -1,0 +1,110 @@
+.Landing-container {
+  display: flex;
+}
+
+.Landing-row-fluid {
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  height: auto;
+  background: linear-gradient(rgb(240, 240, 255), rgba(240, 240, 255, 0)),
+    linear-gradient(
+      86.97deg,
+      rgba(255, 218, 185, 0.4) -0.67%,
+      rgba(204, 238, 220, 0.4) 24.91%,
+      rgba(198, 227, 255, 0.4) 48.82%,
+      rgba(225, 216, 255, 0.4) 72.18%,
+      rgba(255, 198, 227, 0.4) 88.31%
+    ),
+    rgb(240, 240, 255);
+}
+
+.Landing-col {
+  flex: 1;
+}
+
+.Landing-text-col {
+  padding: 20px;
+}
+
+.Landing-text-col .Landing-heading {
+  color: #9c5fc4;
+  font-size: 3em;
+}
+
+.Landing-paragraph {
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.Landing-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #9c5fc4;
+  color: #fff;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.Landing-button:hover {
+  background-color: #7d4c9f;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Landing-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Landing-text-col .Landing-heading {
+    font-size: 1em;
+  }
+
+  .Landing-paragraph {
+    font-size: 0.8em;
+  }
+
+  .Landing-button {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Landing-text-col .Landing-heading {
+    font-size: 1em;
+  }
+
+  .Landing-paragraph {
+    font-size: 0.7em;
+  }
+
+  .Landing-button {
+    font-size: 0.7em;
+    padding: 8px 15px;
+  }
+
+  .Landing-row-fluid {
+    padding: 5%;
+    margin-top: 20px;
+  }
+
+  .Landing-text-col {
+    padding: 10px;
+  }
+
+  .Landing-image-col {
+    margin-bottom: 20px;
+  }
+}

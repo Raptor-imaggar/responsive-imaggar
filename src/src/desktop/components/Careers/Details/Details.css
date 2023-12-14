@@ -1,0 +1,122 @@
+/* ProSerDetails.css */
+
+.ProSerDetails-main {
+  margin-top: 50px;
+}
+
+.ProSerDetailsContentIntro-container {
+  text-align: center;
+}
+
+.ProSerDetailsContentIntro-heading {
+  color: #000000;
+  font-size: 3em;
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 60%; /* Adjust as needed */
+}
+
+.ProSerDetailsContentIntro-paragraph {
+  font-size: 1.4em;
+  text-align: center;
+  line-height: 1.5;
+  color: #4a4949;
+  margin-bottom: 20px;
+  display: inline-block;
+  max-width: 60%; /* Adjust as needed */
+}
+
+.ProSer-details-row-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.ProSer-details-even {
+  background: linear-gradient(90deg, #f6f3ff 0%, rgba(159, 66, 226, 0.214) 100%);
+}
+/* .ProSer-details-odd {
+  background: linear-gradient(to left, #f6f3ff 0%, rgba(159, 66, 226, 0.214) 100%);
+} */
+
+.ProSer-details-col {
+  flex: 1;
+}
+
+.ProSer-details-text-col {
+  padding: 20px;
+}
+
+.ProSer-details-text-col h1 {
+  color: #8c36d8;
+  font-size: 2.5em;
+}
+
+.ProSer-details-paragraph {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.ProSer-details-image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.ProSer-details-image-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ProSer-details-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .ProSer-details-text-col h1 {
+    font-size: 1em;
+  }
+
+  .ProSer-details-paragraph {
+    font-size: 0.5em;
+  }
+
+  .button-ProSer-detailspage {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .ProSer-details-text-col h1 {
+    font-size: 1em;
+  }
+
+  .ProSer-details-paragraph {
+    font-size: 0.7em;
+  }
+
+  .button-ProSer-detailspage {
+    font-size: 0.7em;
+    padding: 8px 15px;
+  }
+
+  .ProSer-details-row-fluid {
+    padding: 5%;
+    margin-top: 20px;
+  }
+
+  .ProSer-details-text-col {
+    padding: 10px;
+  }
+
+  .ProSer-details-image-col {
+    margin-bottom: 20px;
+  }
+}

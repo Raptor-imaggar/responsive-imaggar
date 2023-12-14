@@ -1,10 +1,14 @@
 import React from 'react';
-import './careers.css'
+import Landing from '../../components/Careers/Landing'
+import Details from '../../components/Careers/Details'
+
 
 function Careers() {
   return (
-    <div className='carrers-section'>
-    jone
+    <div>
+     <Landing />
+     <Details />
+    jjnes
     </div>
   );
 }
