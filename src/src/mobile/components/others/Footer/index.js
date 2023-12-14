@@ -36,7 +36,7 @@ const MobileFooter = () => {
                 </div>
                 <div className="Mobilefooterdes mobile-followus-text">
                   {/* Social media links */}
-                  <h4>follow us</h4>
+              
                   <p>Shape the New Era of Customer Service with Generative AI</p>
                 </div>
               </div>

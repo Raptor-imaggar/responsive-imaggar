@@ -1,6 +1,6 @@
 import React from 'react';
-import Landing from '../../components/Careers/Landing'
-import Details from '../../components/Careers/Details'
+import Landing from '../../components/jobOpening/Landing'
+import Details from '../../components/jobOpening/Details'
 
 
 function Careers() {

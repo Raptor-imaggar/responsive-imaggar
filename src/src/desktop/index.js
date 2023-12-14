@@ -18,7 +18,7 @@ const DesktopRoutes = () => {
       <Route exact path="/" element={<>
       <Header />
       <Home /> <SubscribePopup /><Footer /></>} />
-      <Route  path="/login" element={<Login />} />    
+      <Route  path="/login" element={<><Header /><Footer /></>} />    
       <Route  path="/Careers" element={<><Header /><Careers /><Footer /></>} />
       <Route  path="/jobOpening" element={<><Header /><JobOpening /><Footer /></>} />
       <Route  path="/contact" element={<><Header /><Contact /><Footer /></>} />

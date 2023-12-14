@@ -1,6 +1,6 @@
 // Landing.js
 import React from 'react';
-import CareersComponentContent from '../../../../../data/careers/CareersData';
+import CareersComponentContent from '../../../../../data/openings';
 import './Landing.css';
 
 const Landing = () => {
