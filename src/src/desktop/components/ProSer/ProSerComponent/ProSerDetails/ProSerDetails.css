@@ -1,14 +1,14 @@
-/* SiteDetails.css */
+/* ProSerDetails.css */
 
-.SiteDetails-main {
+.ProSerDetails-main {
     margin-top: 50px;
   }
   
-  .siteDetailsContentIntro-container {
+  .ProSerDetailsContentIntro-container {
     text-align: center;
   }
   
-  .siteDetailsContentIntro-heading {
+  .ProSerDetailsContentIntro-heading {
     color: #000000;
     font-size: 3em;
     margin-bottom: 10px;
@@ -16,7 +16,7 @@
     max-width: 60%; /* Adjust as needed */
   }
   
-  .siteDetailsContentIntro-paragraph {
+  .ProSerDetailsContentIntro-paragraph {
     font-size: 1.4em;
     text-align: center;
     line-height: 1.5;
@@ -26,34 +26,34 @@
     max-width: 60%; /* Adjust as needed */
   }
   
-  .Site-details-row-fluid {
+  .ProSer-details-row-fluid {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10%;
   }
   
-  .Site-details-even {
+  .ProSer-details-even {
     background: linear-gradient(90deg, #f6f3ff 0%, rgba(159, 66, 226, 0.214) 100%);
   }
-  /* .Site-details-odd {
+  /* .ProSer-details-odd {
     background: linear-gradient(to left, #f6f3ff 0%, rgba(159, 66, 226, 0.214) 100%);
 } */
 
-  .Site-details-col {
+  .ProSer-details-col {
     flex: 1;
   }
   
-  .Site-details-text-col {
+  .ProSer-details-text-col {
     padding: 20px;
   }
   
-  .Site-details-text-col h1 {
+  .ProSer-details-text-col h1 {
     color: #8c36d8;
     font-size: 2.5em;
   }
   
-  .Site-details-paragraph {
+  .ProSer-details-paragraph {
     font-size: 1.2em;
     text-align: justify;
     line-height: 1.5;
@@ -61,62 +61,62 @@
     margin-bottom: 5px;
   }
   
-  .Site-details-image-col {
+  .ProSer-details-image-col {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
   }
   
-  .Site-details-image-col img {
+  .ProSer-details-image-col img {
     max-width: 100%;
     height: auto;
   }
   
-  .Site-details-text {
+  .ProSer-details-text {
     margin-top: 20px;
     margin-bottom: 20px;
   }
   
   /* Media Queries */
   @media only screen and (max-width: 768px) {
-    .Site-details-text-col h1 {
+    .ProSer-details-text-col h1 {
       font-size: 1em;
     }
   
-    .Site-details-paragraph {
+    .ProSer-details-paragraph {
       font-size: 0.5em;
     }
   
-    .button-Site-detailspage {
+    .button-ProSer-detailspage {
       font-size: 0.9em;
     }
   }
   
   @media only screen and (max-width: 1024px) {
-    .Site-details-text-col h1 {
+    .ProSer-details-text-col h1 {
       font-size: 1em;
     }
   
-    .Site-details-paragraph {
+    .ProSer-details-paragraph {
       font-size: 0.7em;
     }
   
-    .button-Site-detailspage {
+    .button-ProSer-detailspage {
       font-size: 0.7em;
       padding: 8px 15px;
     }
   
-    .Site-details-row-fluid {
+    .ProSer-details-row-fluid {
       padding: 5%;
       margin-top: 20px;
     }
   
-    .Site-details-text-col {
+    .ProSer-details-text-col {
       padding: 10px;
     }
   
-    .Site-details-image-col {
+    .ProSer-details-image-col {
       margin-bottom: 20px;
     }
   }

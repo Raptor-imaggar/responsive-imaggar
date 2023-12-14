@@ -8,7 +8,7 @@ import SubscribePopup from './components/others/SubscribePopup';
 import Careers from './pages/carrers';
 import Login from './pages/login';
 import Contact from './pages/contact';
-import Site from './pages/products/site';
+import ProSer from './pages/ProSer';
 
 const DesktopRoutes = () => {
   return (
@@ -20,7 +20,7 @@ const DesktopRoutes = () => {
       
       <Route  path="/Careers" element={<><Header /><Careers /><Footer /></>} />
       <Route  path="/contact" element={<><Header /><Contact /><Footer /></>} />
-      <Route  path="/products" element={<><Header /><Site /><Footer /></>} />
+      <Route  path="/products" element={<><Header /><ProSer /><Footer /></>} />
       <Route exact path="*" element={<Home />} />
     </RouterRoutes>
   );

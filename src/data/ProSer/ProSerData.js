@@ -1,27 +1,27 @@
-// SiteComponentContent.js
+// ProSerComponentContent.js
 
-import SiteLandingImg from './image.jpg';
-import SiteDetailsImg from './image.gif';
+import ProSerLandingImg from './image.jpg';
+import ProSerDetailsImg from './image.gif';
 
-const SiteComponentContent = {
-  sitelandingContent: {
+const ProSerComponentContent = {
+  ProSerlandingContent: {
     minititle: "Mechanize Your Business Using",
     title: "Mechanize Your Business Using AI",
     paragraph:
       "Optimize operations with advanced AI solutions, leverage immersive technologies for enhanced customer experiences, and explore the latest tech innovations for increased efficiency and productivity.",
     buttonText: "Get A Demo",
-    imageUrl: SiteLandingImg,
+    imageUrl: ProSerLandingImg,
     imageAlt: "Simplified Interface for Transformation and Enhancement",
     demoLink: "/contact",
   },
 
-  siteDetailsContent: [
+  ProSerDetailsContent: [
     {
       title: 'AI-POWERED SELF-SERVICE',
       heading: 'Automate self-service across channels',
       paragraph:
         'Minimize wait times, increase resolutions. Freshbots, powered by Freddy Self Service, work on many channels so customers can find answers wherever they are. With Freshbots deflecting up to 70% of conversations, your team can focus on what matters most.*',
-      imageUrl: SiteDetailsImg,
+      imageUrl: ProSerDetailsImg,
       imageAlt: 'AI-Powered Self-Service Image',
     },
     {
@@ -29,7 +29,7 @@ const SiteComponentContent = {
       heading: 'Make smart decisions faster',
       paragraph:
         'Powered by generative AI, Freddy Insights proactively analyzes performance data for opportunities to optimize productivity and head off potential issues. Freddy Insights even recommends remediation actions—and helps execute them.',
-      imageUrl: SiteDetailsImg,
+      imageUrl: ProSerDetailsImg,
       imageAlt: 'Proactive Insights Image',
     },
     {
@@ -37,7 +37,7 @@ const SiteComponentContent = {
       heading: 'Supercharge agent productivity',
       paragraph:
         'Empower agents to personalize service on the fly. View all customer interactions across channels in one place. Freddy Copilot is an always-on assistant that can suggest responses, recommend actions, and summarize events.',
-      imageUrl: SiteDetailsImg,
+      imageUrl: ProSerDetailsImg,
       imageAlt: 'Unified Agent Workspace Image',
     },
     {
@@ -45,16 +45,16 @@ const SiteComponentContent = {
       heading: 'Enable seamless collaboration across teams',
       paragraph:
         'Reach out to colleagues to swiftly resolve customer issues. Swarm fast. Rally a dream team. Track accountability. Advanced ticketing keeps all the information in one place, so it’s easy to stay on top of progress and no one drops the ball.',
-      imageUrl: SiteDetailsImg,
+      imageUrl: ProSerDetailsImg,
       imageAlt: 'Advanced Ticketing Image',
     },
   ],
 
-  siteDetailsIntro: {
+  ProSerDetailsIntro: {
     heading: 'One unified omnichannel solution powered by AI',
     paragraph:
       'Improve customer experience and agent productivity with generative AI. One seamless omnichannel solution for self-service, conversational support, and ticketing.',
   },
 };
 
-export default SiteComponentContent;
+export default ProSerComponentContent;
