@@ -1,13 +1,14 @@
 import React from 'react';
 import Site_landingContent from '../../../../../../data/products/SiteData';
 import "./SiteLanding.css";
+import ProSerClients from '../ProSerClients';
 
 const SiteLanding = () => {
   const { title, paragraph, buttonText, imageUrl, imageAlt, demoLink, minititle } = Site_landingContent.sitelandingContent;
 
   return (
     <div className="Site_landing-row-fluid">
-      
+    <div className="Site_landing-container">
       <div className="Site_landing-col">
         <div className="Site_landing-text-col">
           <p className=' Site_landing-praragraph Site-landing-text'>{minititle}</p>
@@ -26,7 +27,9 @@ const SiteLanding = () => {
         </div>
       </div>
     </div>
-  );
+    <ProSerClients />
+  </div>
+);
 };
 
 export default SiteLanding;

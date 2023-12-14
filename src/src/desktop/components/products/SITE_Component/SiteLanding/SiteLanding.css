@@ -1,11 +1,18 @@
-.Site_landing-row-fluid {
+.Site_landing-container {
   display: flex;
+}
+
+.Site_landing-row-fluid {
   justify-content: center;
   align-items: center;
   padding: 10%;
-  background: linear-gradient(to top, #9928e4a5 0%, #e5b2caac 100%);
-  /* background: linear-gradient(rgba(65, 26, 115, 0.706) -17.19%, rgba(92, 23, 138, 0) 111.4%), linear-gradient(86.97deg, rgba(140, 54, 216, 0.594) -0.67%, rgba(25, 157, 187, 0.245) 24.91%, rgba(0, 160, 204, 0.4) 48.82%, rgba(69, 164, 236, 0.4) 72.18%, rgba(184, 95, 255, 0.4) 88.31%), #8c36d8; */
+  height: auto;
+  background: linear-gradient(rgb(7, 6, 36) -17.19%, rgba(7, 6, 36, 0) 111.4%), linear-gradient(86.97deg, rgba(255, 168, 0, 0.4) -0.67%, rgba(25, 187, 125, 0.4) 24.91%, rgba(0, 82, 204, 0.4) 48.82%, rgba(69, 164, 236, 0.4) 72.18%, rgba(184, 95, 255, 0.4) 88.31%), rgb(7, 6, 36);
+
+  /* background: linear-gradient(to top, #9928e4a5 0%, #e5b2caac 100%); */
+
 }
+
 .Site_landing-col {
   flex: 1;
 }
@@ -16,14 +23,15 @@
 
 .Site_landing-text-col h1 {
   color: #8c36d8;
-  font-size: 2em;
+  font-size: 3em;
+  
 }
 
 .Site_landing-praragraph {
   font-size: 1em;
   text-align: justify;
   line-height: 1.5;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 

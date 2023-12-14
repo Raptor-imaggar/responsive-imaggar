@@ -6,7 +6,7 @@ import SiteDetailsImg from './image.gif';
 const SiteComponentContent = {
   sitelandingContent: {
     minititle: "Mechanize Your Business Using",
-    title: "Mechanize Your Business Using AI, Immersive Technologies, and More",
+    title: "Mechanize Your Business Using AI",
     paragraph:
       "Optimize operations with advanced AI solutions, leverage immersive technologies for enhanced customer experiences, and explore the latest tech innovations for increased efficiency and productivity.",
     buttonText: "Get A Demo",
